@@ -3,16 +3,18 @@ import ReactDOM from "react-dom";
 
 import "./main.css";
 
-const Header = () => {
-  return (
-    <div>
-      <h1>Finally we are live.</h1>
-      Hello from react!!
-    </div>
-  );
-};
+//Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-ReactDOM.render(<Header />, document.getElementById("app"));
+ReactDOM.render(
+  <div>
+    <Header />
+    <Footer />
+    <h1>Hey there!!</h1>
+  </div>,
+  document.getElementById("app")
+);
 
 if (module.hot) {
   module.hot.accept();
