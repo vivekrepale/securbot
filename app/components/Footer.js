@@ -2,12 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <>
-      <Footer classname="footer">
+      <footer className="footer">
         <h5>Developed by: Vivek Repale</h5>
-      </Footer>
-    </>
-  );
+      </footer>  
+      );
 };
 
 export default Footer;

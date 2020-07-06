@@ -1,6 +1,15 @@
 const path = require("path");
 //const merge = require("webpack-merge");
 const common = require("./webpack.config");
+const fse = require("fs-extra")
+
+class RunAfterCompile{
+  apply(compiler){
+    compiler.hooks.done.tap('Copy images', function(){
+      fse.copySync('./app/assets/images', './docs/assets/images')
+    })
+  }
+}
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -16,6 +25,7 @@ module.exports = {
       filename: "index.html",
       template: "./app/index.html",
     }),
+    new RunAfterCompile()
   ],
   output: {
     filename: "[name].[chunkhash].js",
@@ -51,6 +61,13 @@ module.exports = {
           },
         },
       },
-    ],
+      {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            'file-loader',
+          ],
+        }
+      
+    ]
   },
 };

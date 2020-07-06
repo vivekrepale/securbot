@@ -13,7 +13,7 @@ body{
 
 .header{
 	height: 90vh;
-	background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.87), rgba(0, 0, 0, 0.8)), url(./assets/images/bg1.jpg);
+	background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.87), rgba(0, 0, 0, 0.8)), url(3d19d77c1451f305cb9d56be5a03d055.jpg);
 	background-size: cover;
 	background-position: top;
 	clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);

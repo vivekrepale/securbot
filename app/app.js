@@ -11,7 +11,6 @@ ReactDOM.render(
   <div>
     <Header />
     <Footer />
-    <h1>Hey there!!</h1>
   </div>,
   document.getElementById("app")
 );
