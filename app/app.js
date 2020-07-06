@@ -4,7 +4,12 @@ import ReactDOM from "react-dom";
 import "./main.css";
 
 const Header = () => {
-  return <div>Hello from react!!</div>;
+  return (
+    <div>
+      <h1>Finally about to go LIVE!!!!</h1>
+      Hello from react!!
+    </div>
+  );
 };
 
 ReactDOM.render(<Header />, document.getElementById("app"));
