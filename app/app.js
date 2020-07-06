@@ -6,7 +6,7 @@ import "./main.css";
 const Header = () => {
   return (
     <div>
-      <h1>Finally about to go LIVE!!!!</h1>
+      <h1>Finally we are live.</h1>
       Hello from react!!
     </div>
   );
