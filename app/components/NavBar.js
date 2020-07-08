@@ -28,6 +28,7 @@ const NavBar = () => {
 						Solutions and services
 					</Link>
 				</li>
+
 				<li className="nav__nav-list__nav-item">
 					<Link
 						to="/products"

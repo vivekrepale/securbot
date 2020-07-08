@@ -1,7 +1,8 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 const Testimonials = () => {
 	return <div>Testimonials</div>;
 };
 
-export default Testimonials;
+export default withRouter(Testimonials);
