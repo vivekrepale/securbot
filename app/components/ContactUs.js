@@ -1,7 +1,8 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 const ContactUs = () => {
 	return <div>ContactUs</div>;
 };
 
-export default ContactUs;
+export default withRouter(ContactUs);

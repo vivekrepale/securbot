@@ -1,6 +1,5 @@
 import React from "react";
-import { BroswerRouter as Router, Switch, Route } from "react-router-dom";
-
+import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 //Components
 import Header from "./Header";
 import Footer from "./Footer";
@@ -28,27 +27,27 @@ const Layout = () => {
 				<div className="container__content">
 					<Switch>
 						<Route path="/" exact>
-							<div>Say Hi</div>
+							<Home />
 						</Route>
 
 						<Route path="/about-us">
-							<div>Say Hie</div>
+							<AboutUs />
 						</Route>
 
 						<Route path="/services-and-solutions">
-							<div>Say Hig</div>
+							<S_and_S />
 						</Route>
 
 						<Route path="/products">
-							<div>Say Hib</div>
+							<Products />
 						</Route>
 
 						<Route path="/testimonials">
-							<div>Say Hin</div>
+							<Testimonials />
 						</Route>
 
 						<Route path="/contact-us">
-							<div>Say Hiw</div>
+							<ContactUs />
 						</Route>
 					</Switch>
 				</div>
