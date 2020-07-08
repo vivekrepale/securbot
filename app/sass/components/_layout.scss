@@ -1,0 +1,36 @@
+.container {
+	display: grid;
+	grid-template-rows: min-content 80vh min-content min-content min-content;
+	grid-template-columns:
+		[full-start] 1fr [center-start] repeat(
+			8,
+			[col-start] minmax(min-content, 12rem) [col-end]
+		)
+		[center-end] 1fr[full-end];
+
+	&__navbar {
+		grid-row: 1 / 2;
+		grid-column: full-start / full-end;
+	}
+
+	&__header-main {
+		grid-row: 2 / 3;
+		grid-column: full-start / col-end 5;
+	}
+
+	&__header-about {
+		grid-row: 2 / 3;
+		grid-column: col-start 6 / full-end;
+		background-color: $color-primary;
+	}
+
+	&__content {
+		grid-row: 3 / 4;
+		grid-column: full-start / full-end;
+	}
+
+	&__footer {
+		grid-row: 4 / 5;
+		grid-column: full-start / full-end;
+	}
+}

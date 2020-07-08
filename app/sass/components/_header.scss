@@ -1,0 +1,33 @@
+.header {
+	height: 100%;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(#4020e0, 0.87),
+			rgba(#833dec, 0.8),
+			rgba(#9f60ed, 0.8)
+		),
+		url(../assets/images/bg1.jpg);
+	background-size: cover;
+
+	position: relative;
+
+	&__title {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		&__main,
+		&__sub {
+			color: #210e0e;
+			font-size: 3rem;
+			display: block;
+		}
+
+		h2 {
+			color: #210e0e;
+			font-size: 15px;
+		}
+	}
+}
