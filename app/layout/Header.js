@@ -1,13 +1,10 @@
 import React from "react";
+import LogoIamge from "../assets/images/logo.png";
 
 const Header = () => {
 	return (
 		<header className="header">
-			<img
-				src="../assets/images/logo.png"
-				alt="logo"
-				className="header__logo"
-			/>
+			<img src={LogoIamge} alt="logo" className="header__logo" />
 			<div className="header__title">
 				<h1>
 					<span className="header__title__main">
