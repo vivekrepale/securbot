@@ -1,6 +1,6 @@
-.container {
+.layout {
 	display: grid;
-	grid-template-rows: min-content 80vh min-content min-content min-content;
+	grid-template-rows: 50vh min-content min-content min-content min-content;
 	grid-template-columns:
 		[full-start] 1fr [center-start] repeat(
 			8,
@@ -8,24 +8,14 @@
 		)
 		[center-end] 1fr[full-end];
 
-	&__navbar {
+	&__header-main {
 		grid-row: 1 / 2;
 		grid-column: full-start / full-end;
 	}
 
-	&__header-main {
+	&__navbar {
 		grid-row: 2 / 3;
-		grid-column: full-start / col-end 5;
-	}
-
-	&__header-about {
-		grid-row: 2 / 3;
-		grid-column: col-start 6 / full-end;
-		background-image: linear-gradient(
-			to right,
-			rgba($color-primary, 1),
-			rgba($color-secondary, 1)
-		);
+		grid-column: full-start / full-end;
 	}
 
 	&__content {

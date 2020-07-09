@@ -1,30 +1,30 @@
 import React from "react";
 import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
+
 //Components
 import Header from "./Header";
 import Footer from "./Footer";
 import NavBar from "./NavBar.js";
 
-import Home from "./Home.js";
-import AboutUs from "./AboutUs.js";
-import ContactUs from "./ContactUs.js";
-import Products from "./Products.js";
-import Testimonials from "./Testimonials.js";
-import S_and_S from "./S_and_S.js";
+import Home from "../components/Home.js";
+import AboutUs from "../components/AboutUs.js";
+import ContactUs from "../components/ContactUs.js";
+import Products from "../components/Products.js";
+import Testimonials from "../components/Testimonials.js";
+import S_and_S from "../components/S_and_S.js";
 
 const Layout = () => {
 	return (
 		<Router>
-			<div className="container">
-				<div className="container__navbar">
+			<div className="layout">
+				<div className="layout__navbar">
 					<NavBar />
 				</div>
-				<div className="container__header-main">
+				<div className="layout__header-main">
 					<Header />
 				</div>
-				<div className="container__header-about">Header about</div>
 
-				<div className="container__content">
+				<div className="layout__content">
 					<Switch>
 						<Route path="/" exact>
 							<Home />
@@ -52,7 +52,7 @@ const Layout = () => {
 					</Switch>
 				</div>
 
-				<div className="container__footer">
+				<div className="layout__footer">
 					<Footer />
 				</div>
 			</div>

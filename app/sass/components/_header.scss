@@ -7,7 +7,7 @@
 			rgba($color-primary, 0.5),
 			rgba($color-primary, 0.87)
 		),
-		url(../assets/images/bg1.jpg);
+		url(../assets/images/bgDesktop1.jpg);
 	background-size: cover;
 
 	position: relative;
@@ -16,7 +16,7 @@
 		position: absolute;
 		top: 40%;
 		left: 50%;
-		transform: translate(-100%, -50%);
+		transform: translate(-120%, -50%);
 
 		&__main {
 			color: black;
@@ -31,7 +31,7 @@
 		&__sub {
 			color: black;
 			font-family: $sidEnpFont;
-			font-size: 4rem;
+			font-size: 4.1rem;
 
 			&__capital {
 				color: $color-tertiary;

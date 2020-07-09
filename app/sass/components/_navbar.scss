@@ -2,25 +2,35 @@
 	&__nav-list {
 		display: flex;
 
+		list-style: none; //getting rid of link bullets in ul itself
+
 		&__nav-item {
 			flex-grow: 1;
-
-			list-style-type: none;
-			padding: 1rem;
-			font-size: 2rem;
 			background-color: $color-primary;
-			text-align: center;
-
-			&__nav-link {
-				text-decoration: none;
-				color: $color-secondary;
-			}
+			padding: 1.5rem;
 
 			&:hover {
 				background-color: $color-secondary;
+			}
 
-				&__nav-link {
-					color: $color-primary;
+			&:hover &__nav-link {
+				color: $color-primary;
+			}
+
+			&__nav-link {
+				&:link,
+				&:visited {
+					font-size: 2.2rem;
+					text-decoration: none;
+					color: $color-secondary;
+					font-weight: 300;
+
+					background-size: 100%;
+					list-style-type: none;
+				}
+
+				&:hover,
+				&:active {
 				}
 			}
 		}

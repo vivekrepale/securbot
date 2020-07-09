@@ -9,7 +9,7 @@ import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 // import Testimonials from "./components/Testimonials";
 // import S_and_S from "./components/S_and_S";
 
-import Layout from "./components/Layout.js";
+import Layout from "./layout/Layout.js";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 //import NavBar from "./components/NavBar";
