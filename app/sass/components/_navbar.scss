@@ -1,22 +1,28 @@
 .nav {
 	&__nav-list {
 		display: flex;
-		justify-content: space-evenly;
-
-		background-color: $color-secondary;
 
 		&__nav-item {
+			flex-grow: 1;
+
 			list-style-type: none;
 			padding: 1rem;
 			font-size: 2rem;
+			background-color: $color-primary;
+			text-align: center;
 
 			&__nav-link {
 				text-decoration: none;
-				color: $color-primary;
+				color: $color-secondary;
 			}
-		}
-		&__nav-item:hover {
-			background-color: $color-tertiary;
+
+			&:hover {
+				background-color: $color-secondary;
+
+				&__nav-link {
+					color: $color-primary;
+				}
+			}
 		}
 	}
 }

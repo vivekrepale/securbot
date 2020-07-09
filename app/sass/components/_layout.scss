@@ -21,7 +21,11 @@
 	&__header-about {
 		grid-row: 2 / 3;
 		grid-column: col-start 6 / full-end;
-		background-color: $color-primary;
+		background-image: linear-gradient(
+			to right,
+			rgba($color-primary, 1),
+			rgba($color-secondary, 1)
+		);
 	}
 
 	&__content {
@@ -32,5 +36,6 @@
 	&__footer {
 		grid-row: 4 / 5;
 		grid-column: full-start / full-end;
+		background-color: $color-primary;
 	}
 }

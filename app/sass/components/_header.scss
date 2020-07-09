@@ -1,10 +1,11 @@
 .header {
 	height: 100%;
 	background-image: linear-gradient(
-			to right bottom,
-			rgba(#4020e0, 0.87),
-			rgba(#833dec, 0.8),
-			rgba(#9f60ed, 0.8)
+			to right,
+			rgba($color-secondary, 0.8),
+			rgba($color-secondary, 0.8),
+			rgba($color-primary, 0.5),
+			rgba($color-primary, 0.87)
 		),
 		url(../assets/images/bg1.jpg);
 	background-size: cover;
@@ -15,19 +16,29 @@
 		position: absolute;
 		top: 40%;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
+		transform: translate(-100%, -50%);
 
-		&__main,
-		&__sub {
-			color: #210e0e;
-			font-size: 3rem;
+		&__main {
+			color: black;
+			font-family: $securbotFont;
+			font-size: 5rem;
 			display: block;
-		}
 
-		h2 {
-			color: #210e0e;
-			font-size: 15px;
+			&__capital {
+				color: $color-tertiary;
+			}
 		}
+		&__sub {
+			color: black;
+			font-family: $sidEnpFont;
+			font-size: 4rem;
+
+			&__capital {
+				color: $color-tertiary;
+			}
+		}
+	}
+	&__sub-title {
+		font-family: "Lato" san-serif;
 	}
 }

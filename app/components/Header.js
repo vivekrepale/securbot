@@ -5,12 +5,21 @@ const Header = () => {
 		<header className="header">
 			<div className="header__title">
 				<h1>
-					<span className="header__title__main">Securbot</span>
+					<span className="header__title__main">
+						<span className="header__title__sub__capital">S</span>
+						ecur
+						<span className="header__title__sub__capital">B</span>ot
+					</span>
 					<span className="header__title__sub">
-						Siddharth Enterprises
+						<span className="header__title__sub__capital">S</span>
+						iddharth{" "}
+						<span className="header__title__sub__capital">E</span>
+						nterprises
 					</span>
 				</h1>
-				<h2>for all your security needs...</h2>
+				<h2 className="header__sub-title">
+					for all your security needs...
+				</h2>
 			</div>
 		</header>
 	);
