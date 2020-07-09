@@ -1,4 +1,11 @@
 .header {
+	display: grid;
+	grid-template-rows: 1fr min-content 1fr;
+	grid-template-columns: minmax(min-content, 2rem) minmax(
+			min-content,
+			max-content
+		);
+
 	height: 100%;
 	background-image: linear-gradient(
 			to right,
@@ -13,10 +20,8 @@
 	position: relative;
 
 	&__title {
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-120%, -50%);
+		grid-row: 2 / 3;
+		grid-column-start: 2;
 
 		&__main {
 			color: black;
