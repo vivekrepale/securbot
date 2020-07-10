@@ -18,3 +18,58 @@ $sidEnpFont: "seFont", san-serif;
 	font-size: 2rem;
 	font-weight: 400;
 }
+
+$color-black: black;
+$color-white: white;
+
+%heading {
+	text-align: center;
+}
+
+.heading-1 {
+	@extend %heading;
+	font-size: 4.5rem;
+
+	&--black {
+		color: $color-black;
+	}
+	&--white {
+		color: $color-white;
+	}
+}
+
+.heading-2 {
+	@extend %heading;
+	font-size: 4rem;
+
+	&--black {
+		color: $color-black;
+	}
+	&--white {
+		color: $color-white;
+	}
+}
+
+.heading-3 {
+	@extend %heading;
+	font-size: 2.5rem;
+
+	&--black {
+		color: $color-black;
+	}
+	&--white {
+		color: $color-white;
+	}
+}
+
+.heading-4 {
+	@extend %heading;
+	font-size: 1.6rem;
+
+	&--black {
+		color: $color-black;
+	}
+	&--white {
+		color: $color-white;
+	}
+}
