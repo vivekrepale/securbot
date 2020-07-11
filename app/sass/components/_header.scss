@@ -1,58 +1,72 @@
 .header {
 	display: grid;
-	grid-template-rows: max-content 1fr min-content 2fr;
-	grid-template-columns: minmax(min-content, 2rem) minmax(
-			min-content,
-			max-content
-		);
+	//grid-template-rows: max-content 1fr;
+	grid-template-columns: max-content minmax(max-content, 1fr);
 
 	height: 100%;
 	background-image: linear-gradient(
 			to right,
-			rgba($color-secondary, 0.8),
-			rgba($color-secondary, 0.8),
-			rgba($color-primary, 0.5),
-			rgba($color-primary, 0.87)
+			rgba($color-primary, 0.9),
+			rgba($color-primary, 0.9),
+			rgba($color-primary, 0.9),
+			rgba($color-primary, 0.9)
 		),
-		url(../assets/images/bgDesktop1.jpg);
+		url(../assets/images/bgDesktop.jpg);
 	background-size: cover;
 
-	position: relative;
+	//clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 
 	&__logo {
-		grid-row: 1 / 2;
-		grid-column: 1 / 2;
+		display: grid;
+		// grid-auto-flow: column;
+		// grid-template-columns: max-content;
+		//justify-content: start;
+		padding: 1rem;
+		margin: auto;
 
-		max-width: 6rem;
-		max-height: 6rem;
-		margin: 1.5rem;
+		&__img {
+			max-width: 6rem;
+			max-height: 6rem;
+			margin: auto;
+			//justify-self: center;
+		}
+
+		&__text-1,
+		&__text-2 {
+			color: $color-secondary;
+			font-family: $securbotFont;
+			font-size: 1.5rem;
+			display: inline-block;
+
+			//align-self: start;
+
+			&:first-letter {
+				color: red;
+			}
+		}
 	}
 
 	&__title {
-		grid-row: 3 / 4;
-		grid-column-start: 2;
+		display: grid;
+		margin: auto;
+		justify-items: center;
 
-		&__main {
-			color: black;
-			font-family: $securbotFont;
-			font-size: 5rem;
-			display: block;
-
-			&__capital {
-				color: $color-tertiary;
-			}
-		}
-		&__sub {
-			color: black;
+		&__main-1,
+		&__main-2 {
+			color: $color-secondary;
 			font-family: $sidEnpFont;
-			font-size: 4.1rem;
+			display: inline-block;
 
-			&__capital {
-				color: $color-tertiary;
+			font-size: 6rem;
+
+			&:first-letter {
+				color: red;
 			}
 		}
-	}
-	&__sub-title {
-		font-family: "Lato" san-serif;
+
+		&__sub {
+			font-family: "Lato" san-serif;
+			color: $color-secondary;
+		}
 	}
 }

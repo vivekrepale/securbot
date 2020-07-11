@@ -4,7 +4,7 @@ import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 //Components
 import Header from "./Header";
 import Footer from "./Footer";
-import NavBar from "./NavBar.js";
+//import NavBar from "./NavBar.js";
 import NavBar2 from "./NavBar2.js";
 
 import Home from "../components/Home.js";

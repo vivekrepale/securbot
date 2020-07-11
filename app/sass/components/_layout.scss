@@ -1,6 +1,6 @@
 .layout {
 	display: grid;
-	grid-template-rows: 50vh min-content min-content min-content min-content;
+	grid-template-rows: 30vh min-content min-content min-content min-content;
 	grid-template-columns:
 		[full-start] 1fr [center-start] repeat(
 			8,
