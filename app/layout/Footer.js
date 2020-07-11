@@ -48,6 +48,7 @@ const Footer = () => {
 						<p>+91 9702327707</p>
 						<p>+91 8356038324</p>
 					</div>
+					<div></div>
 				</div>
 
 				<div className="footer__offices__office office2">

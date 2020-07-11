@@ -1,6 +1,6 @@
 .footer {
 	display: grid; //container grid
-	grid-template-rows: min-content min-content 1fr;
+	grid-template-rows: repeat(autofit, 1f);
 
 	&__gov-logos {
 		grid-row: 1 / 2;
