@@ -5,6 +5,7 @@ import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import NavBar from "./NavBar.js";
+import NavBar2 from "./NavBar2.js";
 
 import Home from "../components/Home.js";
 import AboutUs from "../components/AboutUs.js";
@@ -16,10 +17,10 @@ import S_and_S from "../components/S_and_S.js";
 const Layout = () => {
 	return (
 		<Router>
+			<div className="layout__navbar">
+				<NavBar2 />
+			</div>
 			<div className="layout">
-				<div className="layout__navbar">
-					<NavBar />
-				</div>
 				<div className="layout__header-main">
 					<Header />
 				</div>
