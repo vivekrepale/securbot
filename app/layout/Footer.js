@@ -9,7 +9,7 @@ import govLogo3 from "../assets/images/digitalIndiaLogo.png";
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<div className="footer__gov-logos">
+			{/*<div className="footer__gov-logos">
 				<div className="footer__gov-logos__logo1">
 					<h3 className="heading-3 heading-3--white">We are </h3>
 					<img
@@ -29,7 +29,7 @@ const Footer = () => {
 					alt="atmaNirbharBharatLogo"
 					className="footer__gov-logos__logo2"
 				/>
-			</div>
+			</div>*/}
 			<div className="footer__offices">
 				<div className="footer__offices__heading ">
 					<h3 className="heading-3 heading-3--white">Offices:</h3>
@@ -48,7 +48,6 @@ const Footer = () => {
 						<p>+91 9702327707</p>
 						<p>+91 8356038324</p>
 					</div>
-					<div></div>
 				</div>
 
 				<div className="footer__offices__office office2">

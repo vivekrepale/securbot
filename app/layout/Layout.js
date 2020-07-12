@@ -4,6 +4,7 @@ import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 //Components
 import Header from "./Header";
 import Footer from "./Footer";
+import Footer2 from "./Footer2";
 import NavBar from "./NavBar.js";
 
 import Home from "../components/Home.js";
@@ -53,7 +54,7 @@ const Layout = () => {
 				</div>
 
 				<div className="layout__footer">
-					<Footer />
+					<Footer2 />
 				</div>
 			</div>
 		</Router>

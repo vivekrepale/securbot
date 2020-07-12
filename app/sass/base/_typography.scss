@@ -22,6 +22,15 @@ $sidEnpFont: "seFont", san-serif;
 $color-black: black;
 $color-white: white;
 
+.normalText {
+	&--black {
+		color: black;
+	}
+	&--white {
+		color: white;
+	}
+}
+
 %heading {
 	text-align: center;
 }
