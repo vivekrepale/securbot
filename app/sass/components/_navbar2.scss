@@ -72,10 +72,10 @@
 	&__nav {
 		position: fixed;
 		height: 100vh;
+		width: 100%;
 		z-index: 3500;
 
-		opacity: 0;
-		width: 0;
+		visibility: hidden;
 
 		display: grid;
 		justify-content: center;
@@ -110,8 +110,7 @@
 	}
 
 	&__checkbox:checked ~ &__nav {
-		opacity: 1;
-		width: 100%;
+		visibility: visible;
 	}
 
 	&__checkbox:checked ~ &__background {
