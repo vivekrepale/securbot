@@ -20,9 +20,9 @@
 		display: grid;
 		// grid-auto-flow: column;
 		// grid-template-columns: max-content;
-		//justify-content: start;
+		align-content: start;
 		padding: 1rem;
-		margin: auto;
+		//margin: auto;
 
 		&__img {
 			max-width: 6rem;
@@ -48,8 +48,9 @@
 
 	&__title {
 		display: grid;
-		margin: auto;
-		justify-items: center;
+		grid-template-columns: minmax(min-content, max-content);
+		align-content: center;
+		padding: 0 4rem;
 
 		&__main-1,
 		&__main-2 {
@@ -67,6 +68,7 @@
 		&__sub {
 			font-family: "Lato" san-serif;
 			color: $color-secondary;
+			// justify-self: end;
 		}
 	}
 }
