@@ -1,68 +1,45 @@
 .header {
 	display: grid;
-	//grid-template-rows: max-content 1fr;
-	grid-template-columns: max-content minmax(max-content, 1fr);
+	grid-template-rows: minmax(max-content, 1fr);
+	//grid-template-columns: max-content minmax(max-content, 1fr);
 
 	height: 100%;
-	background-image: linear-gradient(
-			to right,
-			rgba($color-primary, 0.9),
-			rgba($color-primary, 0.9),
-			rgba($color-primary, 0.9),
-			rgba($color-primary, 0.9)
+	background-image: radial-gradient(
+			rgba($color-primary, 0.85),
+			rgba($color-secondary, 0.9)
 		),
-		url(../assets/images/bgDesktop.jpg);
+		url(../assets/images/bgDesktop2.jpg);
 	background-size: cover;
+	z-index: 1;
+	clip-path: polygon(
+		0 0,
+		45% 0,
+		45% 18%,
+		55% 18%,
+		55% 0,
+		100% 0,
+		100% 100%,
+		0 100%
+	);
 
-	//clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
-
-	&__logo {
-		display: grid;
-		// grid-auto-flow: column;
-		// grid-template-columns: max-content;
-		align-content: start;
-		padding: 1rem;
-		//margin: auto;
-
-		&__img {
-			max-width: 6rem;
-			max-height: 6rem;
-			margin: auto;
-			//justify-self: center;
-
-			@media only screen and (max-width: 46.25em) {
-				max-width: 5rem;
-				max-height: 5rem;
-			}
-		}
-
-		&__text-1,
-		&__text-2 {
-			color: $color-secondary;
-			font-family: $securbotFont;
-			font-size: 1.5rem;
-			display: inline-block;
-
-			//align-self: start;
-
-			&:first-letter {
-				color: red;
-			}
-
-			@media only screen and (max-width: 46.25em) {
-				font-size: 1.1rem;
-			}
-
-			@media only screen and (max-width: 28.75em) {
-				font-size: 0.9rem;
-			}
-		}
+	@media only screen and (max-width: 35em) {
+		clip-path: polygon(
+			0 0,
+			42% 0,
+			42% 18%,
+			58% 18%,
+			58% 0,
+			100% 0,
+			100% 100%,
+			0 100%
+		);
 	}
 
 	&__title {
 		display: grid;
 		grid-template-columns: minmax(min-content, max-content);
 		align-content: center;
+		justify-content: center;
 		padding: 0 4rem;
 
 		@media only screen and (max-width: 20.625em) {
@@ -89,14 +66,15 @@
 			}
 
 			&:first-letter {
-				color: red;
+				color: $color-tertiary;
 			}
 		}
 
 		&__sub {
 			font-family: "Lato" san-serif;
 			color: $color-secondary;
-			// justify-self: end;
+			display: grid;
+			justify-self: end;
 
 			@media only screen and (max-width: 46.25em) {
 				font-size: 0.8rem;

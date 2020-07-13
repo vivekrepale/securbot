@@ -1,0 +1,23 @@
+.button {
+	background-color: $color-primary;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(16rem, 1fr);
+	justify-items: center;
+	align-items: center;
+
+	&__btn {
+		padding: 1rem 4rem;
+		background-color: $color-secondary;
+		color: $color-primary;
+		//box-shadow: 2rem 2rem 4rem rgba(white, 0.2);
+		-webkit-box-shadow: 0 10px 6px -6px rgba(black, 0.2);
+		font-size: 2rem;
+
+		&:hover {
+			background-color: $color-tertiary;
+			color: $color-primary;
+		}
+	}
+}

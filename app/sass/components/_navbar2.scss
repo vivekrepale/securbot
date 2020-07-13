@@ -40,7 +40,7 @@
 		right: 5.5rem;
 		height: 6rem;
 		width: 6rem;
-		background-color: $color-secondary;
+		background-color: $color-primary;
 		z-index: 4000;
 		border-radius: 50%;
 		cursor: pointer;
@@ -67,7 +67,7 @@
 		}
 
 		span {
-			background-color: $color-primary;
+			background-color: $color-secondary;
 			height: 2px;
 			width: 2.5rem;
 			align-self: center;
@@ -82,7 +82,7 @@
 		span::after {
 			display: inline-block;
 			position: absolute;
-			background-color: $color-primary;
+			background-color: $color-secondary;
 			height: 2px;
 			width: 2.5rem;
 			transition: transform 0.3s;

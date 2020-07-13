@@ -2,14 +2,13 @@ import React from "react";
 import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 
 //Components
+import HeaderLogo from "./HeaderLogo";
 import Header from "./Header";
 import Footer from "./Footer";
-
-//import NavBar from "./NavBar.js";
 import NavBar2 from "./NavBar2.js";
-
 import Footer2 from "./Footer2";
-import NavBar from "./NavBar.js";
+//import NavBar from "./NavBar.js";
+import Practice from "../components/Practice";
 
 import Home from "../components/Home.js";
 import AboutUs from "../components/AboutUs.js";
@@ -23,6 +22,9 @@ const Layout = () => {
 		<Router>
 			<div className="layout__navbar">
 				<NavBar2 />
+			</div>
+			<div className="header-logo">
+				<HeaderLogo />
 			</div>
 			<div className="layout">
 				<div className="layout__header-main">

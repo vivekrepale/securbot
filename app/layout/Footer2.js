@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import SvgComponent from "../components/svg-location.js";
 
 const Footer = () => {
 	return (
@@ -19,23 +20,32 @@ const Footer = () => {
 							//https://www.reddit.com/r/firefox/comments/fpptyj/firefox_content_security_policy_console_output/
 							//content-security-policy="object-src 'none';base-uri 'self';script-src 'nonce-xGcH8cULpuwtFbXcC3cvKQ==' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/geo-maps-api/1"
 						></iframe>
-						<div className="footer__offices__office__info ">
-							<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
-								Mumbai (Head-office)
-							</h4>
-							<p className="footer__offices__office__info__address normalText--white">
-								SHOP No. 01, PLOT No. 112, Opp. BOMBAY PAINTS,
-								SECTOR - 23, JANTA MARKET, TURBHE STN RD,
-								TURBHE, NAVI MUMBAI, MAHARASHTRA. 400705
-							</p>
-							<div className="footer__offices__office__info__contact normalText--white">
-								<p>+91 8080605001</p>
-								<p>+91 9702327707</p>
-								<p>+91 8356038324</p>
-							</div>
-						</div>
 					</div>
 					<div className="footer__offices__office__info ">
+						<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
+							Mumbai (Head-office)
+						</h4>
+						<p className="footer__offices__office__info__address normalText--white">
+							SHOP No. 01, PLOT No. 112, Opp. BOMBAY PAINTS,
+							SECTOR - 23, JANTA MARKET, TURBHE STN RD, TURBHE,
+							NAVI MUMBAI, MAHARASHTRA. 400705
+						</p>
+						<div className="footer__offices__office__info__contact normalText--white">
+							<p>+91 8080605001</p>
+							<p>+91 9702327707</p>
+							<p>+91 8356038324</p>
+						</div>
+					</div>
+				</div>
+				<div className="footer__offices__office">
+					<div className="footer__offices__office__info ">
+						<div className="footer__phone-call-link">
+							<SvgComponent
+								className="footer__phone-call-link__icon"
+								stroke="red"
+							/>
+						</div>
+
 						<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
 							Punjab
 						</h4>
