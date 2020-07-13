@@ -3,8 +3,8 @@
 		position: fixed;
 		top: 6rem;
 		right: 6rem;
-		height: 5rem;
-		width: 5rem;
+		height: 4rem;
+		width: 4rem;
 		border-radius: 50%;
 		background-image: radial-gradient(
 			$color-primary,
@@ -13,6 +13,25 @@
 		);
 		z-index: 2000;
 		//transform: scale(80);
+
+		@media only screen and (max-width: 46.25em) {
+			top: 3.5rem;
+			right: 3.5rem;
+			height: 4rem;
+			width: 4rem;
+		}
+
+		@media only screen and (max-width: 28.75em) {
+			top: 2rem;
+			right: 2rem;
+		}
+
+		@media only screen and (max-width: 20.625em) {
+			top: 1rem;
+			right: 1rem;
+			height: 3rem;
+			width: 3rem;
+		}
 	}
 
 	&__btn {
@@ -28,12 +47,35 @@
 
 		display: grid;
 
+		@media only screen and (max-width: 46.25em) {
+			top: 3rem;
+			right: 3rem;
+			height: 5rem;
+			width: 5rem;
+		}
+
+		@media only screen and (max-width: 28.75em) {
+			top: 2rem;
+			right: 2rem;
+		}
+
+		@media only screen and (max-width: 20.625em) {
+			top: 1rem;
+			right: 1rem;
+			height: 4rem;
+			width: 4rem;
+		}
+
 		span {
 			background-color: $color-primary;
 			height: 2px;
 			width: 2.5rem;
 			align-self: center;
 			justify-self: center;
+
+			@media only screen and (max-width: 20.625em) {
+				width: 1.8rem;
+			}
 		}
 
 		span::before,
@@ -43,26 +85,46 @@
 			background-color: $color-primary;
 			height: 2px;
 			width: 2.5rem;
-			transition: all 0.3s;
+			transition: transform 0.3s;
+
+			@media only screen and (max-width: 20.625em) {
+				width: 1.8rem;
+			}
 		}
 
 		span::before {
 			content: "";
 			transform: translateY(0.7rem);
+
+			@media only screen and (max-width: 20.625em) {
+				transform: translateY(0.5rem);
+			}
 		}
 
 		span::after {
 			content: "";
 			transform: translateY(-0.7rem);
+
+			@media only screen and (max-width: 20.625em) {
+				transform: translateY(-0.5rem);
+			}
 		}
 	}
 
 	&__btn:hover span::before {
 		transform: translateY(0.9rem);
+
+		@media only screen and (max-width: 20.625em) {
+			transform: translateY(0.7rem);
+		}
 	}
 
 	&__btn:hover span::after {
 		transform: translateY(-0.9rem);
+
+		@media only screen and (max-width: 20.625em) {
+			transform: translateY(-0.7rem);
+		}
 	}
 
 	&__checkbox {
@@ -116,8 +178,4 @@
 	&__checkbox:checked ~ &__background {
 		transform: scale(80);
 	}
-}
-
-.heading-3 {
-	font-size: 2.6rem;
 }

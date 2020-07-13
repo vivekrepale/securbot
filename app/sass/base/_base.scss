@@ -8,6 +8,11 @@
 
 html {
 	font-size: 62.5%;
+	padding: 1.5rem;
+
+	@media only screen and (max-width: 46.25em) {
+		padding: 0;
+	}
 }
 
 body {

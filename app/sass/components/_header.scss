@@ -29,6 +29,11 @@
 			max-height: 6rem;
 			margin: auto;
 			//justify-self: center;
+
+			@media only screen and (max-width: 46.25em) {
+				max-width: 5rem;
+				max-height: 5rem;
+			}
 		}
 
 		&__text-1,
@@ -43,6 +48,14 @@
 			&:first-letter {
 				color: red;
 			}
+
+			@media only screen and (max-width: 46.25em) {
+				font-size: 1.1rem;
+			}
+
+			@media only screen and (max-width: 28.75em) {
+				font-size: 0.9rem;
+			}
 		}
 	}
 
@@ -52,6 +65,10 @@
 		align-content: center;
 		padding: 0 4rem;
 
+		@media only screen and (max-width: 20.625em) {
+			padding: 0 1.5rem;
+		}
+
 		&__main-1,
 		&__main-2 {
 			color: $color-secondary;
@@ -59,6 +76,17 @@
 			display: inline-block;
 
 			font-size: 6rem;
+			@media only screen and (max-width: 46.25em) {
+				font-size: 4rem;
+			}
+
+			@media only screen and (max-width: 28.75em) {
+				font-size: 2.5rem;
+			}
+
+			@media only screen and (max-width: 20.625em) {
+				font-size: 2rem;
+			}
 
 			&:first-letter {
 				color: red;
@@ -69,6 +97,18 @@
 			font-family: "Lato" san-serif;
 			color: $color-secondary;
 			// justify-self: end;
+
+			@media only screen and (max-width: 46.25em) {
+				font-size: 0.8rem;
+			}
+
+			@media only screen and (max-width: 28.75em) {
+				font-size: 0.6rem;
+			}
+
+			@media only screen and (max-width: 20.625em) {
+				//font-size: 2rem;
+			}
 		}
 	}
 }
