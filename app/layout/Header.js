@@ -1,21 +1,11 @@
 import React from "react";
-import LogoIamge from "../assets/images/logo2.png";
+import LogoIamge from "../assets/images/logo.png";
+//import { Link } from "react-router-dom";
+import Sprite from "../assets/svg/sprite.svg";
 
 const Header = () => {
 	return (
 		<header className="header">
-			<div className="header__logo">
-				<img
-					src={LogoIamge}
-					alt="securbotLogo"
-					className="header__logo__img"
-				/>
-				<div className="header__logo__text">
-					{" "}
-					<h1 className="header__logo__text-1">Secur</h1>
-					<h1 className=" header__logo__text-2">Bot</h1>
-				</div>
-			</div>
 			<div className="header__title">
 				<div className="header__title__main">
 					{" "}

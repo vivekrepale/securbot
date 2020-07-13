@@ -1,0 +1,28 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(10rem, 1fr)
+	); //repeat(auto-fit, 1fr);
+	grid-template-rows: 20rem;
+	grid-auto-rows: 20rem;
+
+	&__item1 {
+		background-color: orange;
+	}
+	&__item2 {
+		background-color: red;
+	}
+	&__item3 {
+		background-color: black;
+	}
+	&__item4 {
+		background-color: blue;
+	}
+	&__item5 {
+		background-color: green;
+	}
+	&__item6 {
+		background-color: pink;
+	}
+}
