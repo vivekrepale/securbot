@@ -1,39 +1,4 @@
 .navigation {
-	&__background {
-		position: fixed;
-		top: 6rem;
-		right: 6rem;
-		height: 4rem;
-		width: 4rem;
-		border-radius: 50%;
-		background-image: radial-gradient(
-			$color-primary,
-			$color-primary,
-			$color-primary-light
-		);
-		z-index: 2000;
-		//transform: scale(80);
-
-		@media only screen and (max-width: 46.25em) {
-			top: 3.5rem;
-			right: 3.5rem;
-			height: 4rem;
-			width: 4rem;
-		}
-
-		@media only screen and (max-width: 28.75em) {
-			top: 2rem;
-			right: 2rem;
-		}
-
-		@media only screen and (max-width: 20.625em) {
-			top: 1rem;
-			right: 1rem;
-			height: 3rem;
-			width: 3rem;
-		}
-	}
-
 	&__btn {
 		position: fixed;
 		top: 5.5rem;
@@ -137,12 +102,47 @@
 		width: 100%;
 		z-index: 3500;
 
-		visibility: hidden;
+		//visibility: hidden;
 
 		display: grid;
 		justify-content: center;
 		align-content: center;
 		text-align: center;
+
+		&__background {
+			position: fixed;
+			top: 6rem;
+			right: 6rem;
+			height: 4rem;
+			width: 4rem;
+			border-radius: 50%;
+			background-image: radial-gradient(
+				$color-primary,
+				$color-primary,
+				$color-primary-light
+			);
+			z-index: 2000;
+			transform: scale(80);
+
+			@media only screen and (max-width: 46.25em) {
+				top: 3.5rem;
+				right: 3.5rem;
+				height: 4rem;
+				width: 4rem;
+			}
+
+			@media only screen and (max-width: 28.75em) {
+				top: 2rem;
+				right: 2rem;
+			}
+
+			@media only screen and (max-width: 20.625em) {
+				top: 1rem;
+				right: 1rem;
+				height: 3rem;
+				width: 3rem;
+			}
+		}
 
 		&__list {
 			&__item {
@@ -171,11 +171,11 @@
 		}
 	}
 
-	&__checkbox:checked ~ &__nav {
-		visibility: visible;
-	}
+	// &__checkbox:checked ~ &__nav {
+	// 	visibility: visible;
+	// }
 
-	&__checkbox:checked ~ &__background {
-		transform: scale(80);
-	}
+	// &__checkbox:checked ~ &__background {
+	// 	transform: scale(80);
+	// }
 }
