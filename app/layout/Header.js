@@ -16,6 +16,26 @@ const Header = () => {
 					for all your security needs...
 				</h2>
 			</div>
+			<div className="header__contact-links">
+				<span>
+					Call:{" "}
+					<a
+						href="tel:+918080605001"
+						className="header__contact-links__link"
+					>
+						+918080605001
+					</a>
+				</span>
+				<span>
+					Enquiry:{" "}
+					<a
+						href="mailto:vivekrepale@gmail.com"
+						className="header__contact-links__link"
+					>
+						enquiry@securbot.in
+					</a>
+				</span>
+			</div>
 		</header>
 	);
 };

@@ -1,11 +1,15 @@
 .button {
-	background-color: $color-primary;
+	//background-color: $color-primary;
+	//margin: 0rem min(10, 30rem);
+	//padding: 10rem;
 
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: minmax(16rem, 1fr);
-	justify-items: center;
+	grid-template-columns: min-content; //minmax(min-content, 1fr);
+	grid-template-rows: minmax(10rem, 1fr);
+	justify-content: center;
 	align-items: center;
+
+	//transform: translateY(-50%);
 
 	&__btn {
 		padding: 1rem 4rem;
