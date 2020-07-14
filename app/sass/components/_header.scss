@@ -1,6 +1,6 @@
 .header {
 	display: grid;
-	grid-template-rows: minmax(max-content, 1fr);
+	grid-template-rows: 1fr minmax(max-content, 2fr) 1fr;
 	//grid-template-columns: max-content minmax(max-content, 1fr);
 
 	height: 100%;
@@ -10,32 +10,11 @@
 		),
 		url(../assets/images/bgDesktop2.jpg);
 	background-size: cover;
-	z-index: 1;
-	clip-path: polygon(
-		0 0,
-		45% 0,
-		45% 18%,
-		55% 18%,
-		55% 0,
-		100% 0,
-		100% 100%,
-		0 100%
-	);
-
-	@media only screen and (max-width: 35em) {
-		clip-path: polygon(
-			0 0,
-			42% 0,
-			42% 18%,
-			58% 18%,
-			58% 0,
-			100% 0,
-			100% 100%,
-			0 100%
-		);
-	}
+	z-index: 0;
 
 	&__title {
+		grid-row: 2/3;
+
 		display: grid;
 		grid-template-columns: minmax(min-content, max-content);
 		align-content: center;
@@ -87,6 +66,25 @@
 			@media only screen and (max-width: 20.625em) {
 				//font-size: 2rem;
 			}
+		}
+	}
+
+	&__contact-links {
+		grid-row: 3/4;
+
+		display: grid;
+		grid-template-rows: min-content, min-content;
+		justify-content: center;
+		justify-items: center;
+
+		span {
+			font-size: 2rem;
+			color: $color-primary;
+		}
+
+		&__link {
+			font-size: 1.5rem;
+			color: $color-primary;
 		}
 	}
 }
