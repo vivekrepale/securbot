@@ -6,11 +6,7 @@
 		height: 4rem;
 		width: 4rem;
 		border-radius: 50%;
-		background-image: radial-gradient(
-			$color-primary,
-			$color-primary,
-			$color-primary-light
-		);
+		background-image: radial-gradient(rgba(#b30000, 0.8), rgba(#0000b3, 1));
 		z-index: 2000;
 		//transform: scale(80);
 
@@ -40,7 +36,7 @@
 		right: 5.5rem;
 		height: 6rem;
 		width: 6rem;
-		background-color: $color-primary;
+		background-color: $color-secondary;
 		z-index: 4000;
 		border-radius: 50%;
 		cursor: pointer;
@@ -67,7 +63,11 @@
 		}
 
 		span {
-			background-color: $color-secondary;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba($color-red, 0.7),
+				rgba($color-blue, 0.7)
+			);
 			height: 2px;
 			width: 2.5rem;
 			align-self: center;
@@ -82,7 +82,11 @@
 		span::after {
 			display: inline-block;
 			position: absolute;
-			background-color: $color-secondary;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba($color-red, 0.7),
+				rgba($color-blue, 0.7)
+			);
 			height: 2px;
 			width: 2.5rem;
 			transition: transform 0.3s;

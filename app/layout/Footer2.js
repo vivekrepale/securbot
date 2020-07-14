@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import SvgComponent from "../components/svg-location.js";
+import SvgLocation from "../components/svg/location.js";
 
 const Footer = () => {
 	return (
@@ -39,12 +39,7 @@ const Footer = () => {
 				</div>
 				<div className="footer__offices__office">
 					<div className="footer__offices__office__info ">
-						<div className="footer__phone-call-link">
-							<SvgComponent
-								className="footer__phone-call-link__icon"
-								stroke="red"
-							/>
-						</div>
+						<div className="footer__phone-call-link"></div>
 
 						<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
 							Punjab

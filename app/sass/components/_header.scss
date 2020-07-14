@@ -4,9 +4,10 @@
 	//grid-template-columns: max-content minmax(max-content, 1fr);
 
 	height: 100%;
-	background-image: radial-gradient(
-			rgba($color-primary, 0.85),
-			rgba($color-secondary, 0.9)
+	background-image: linear-gradient(
+			to bottom right,
+			rgba($color-red, 0.7),
+			rgba($color-blue, 0.7)
 		),
 		url(../assets/images/bgDesktop2.jpg);
 	background-size: cover;
@@ -73,18 +74,33 @@
 		grid-row: 3/4;
 
 		display: grid;
-		grid-template-rows: min-content, min-content;
+		grid-template-columns: repeat(auto-fit, minmax(5rem, min-content));
+		//grid-template-rows: min-content, min-content;
+		grid-auto-flow: column;
+		grid-gap: 4rem;
 		justify-content: center;
 		justify-items: center;
 
-		span {
-			font-size: 2rem;
-			color: $color-primary;
-		}
+		&__call-mail {
+			display: grid;
+			grid-auto-flow: column;
+			align-items: center;
+			grid-gap: 2rem;
 
-		&__link {
-			font-size: 1.5rem;
-			color: $color-primary;
+			&__icon {
+				width: 4rem;
+				height: 4rem;
+			}
+
+			&__link:link,
+			&__link:visited {
+				color: $color-secondary;
+			}
+
+			&__link:hover,
+			&__link:active {
+				color: $color-primary;
+			}
 		}
 	}
 }
