@@ -1,33 +1,8 @@
 .navigation {
 	&__background {
-		// position: fixed;
-		// top: 6rem;
-		// right: 6rem;
-		// height: 4rem;
-		// width: 4rem;
-		// border-radius: 50%;
 		background-image: radial-gradient($color-blue-dark, $color-red-dark);
 		z-index: 2000;
-		transform: scale(80);
-
-		// @media only screen and (max-width: 46.25em) {
-		// 	top: 3.5rem;
-		// 	right: 3.5rem;
-		// 	height: 4rem;
-		// 	width: 4rem;
-		// }
-
-		// @media only screen and (max-width: 28.75em) {
-		// 	top: 2rem;
-		// 	right: 2rem;
-		// }
-
-		// @media only screen and (max-width: 20.625em) {
-		// 	top: 1rem;
-		// 	right: 1rem;
-		// 	height: 3rem;
-		// 	width: 3rem;
-		// }
+		transform: scale(100);
 	}
 
 	&__nav {
@@ -51,7 +26,7 @@
 					&,
 					&:link,
 					&:visited {
-						color: $color-secondary;
+						color: $color-white;
 						text-decoration: none;
 						display: inline-block;
 						padding: 1rem;
@@ -61,8 +36,8 @@
 
 					&:hover,
 					&:active {
-						color: $color-primary;
-						background-color: $color-secondary;
+						color: $color-black;
+						background-color: $color-white;
 						//transition: background-color 0.5s;
 					}
 				}

@@ -1,0 +1,35 @@
+.container {
+	display: grid;
+	grid-template-rows: 100vh;
+	justify-items: center;
+	align-items: center;
+
+	&__form {
+		display: grid;
+		grid-template-columns: max-content;
+		grid-gap: 3rem;
+		justify-items: center;
+
+		&__input {
+			min-width: 130%;
+			height: 3.5rem;
+			font-size: 1.5rem;
+			border-radius: 8px;
+			text-indent: 1.5rem;
+		}
+
+		&__submit-button {
+			width: 20rem;
+			height: 3.5rem;
+			background-color: $color-white;
+			font-size: 1.5rem;
+			border-width: 0;
+
+			&:hover,
+			&:active {
+				background-color: $color-black;
+				color: $color-white;
+			}
+		}
+	}
+}

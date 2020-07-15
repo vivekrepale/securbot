@@ -1,0 +1,79 @@
+.modal-container {
+	background-image: linear-gradient(
+		to bottom right,
+		rgba($color-red, 1),
+		rgba($color-blue, 1)
+	);
+	z-index: 4000;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	display: grid;
+	//grid-template-rows: 3rem;
+	justify-content: center;
+	align-items: end;
+
+	padding: 4rem;
+
+	&__notice {
+		color: $color-white;
+		font-size: 1.8rem;
+		padding: 2rem 5rem;
+	}
+
+	&__cancel-button {
+		position: fixed;
+		top: 2rem;
+		right: 2rem;
+		height: 3rem;
+		width: 3rem;
+		background-color: $color-white;
+		z-index: 4000;
+		border-radius: 50%;
+		cursor: pointer;
+
+		display: grid;
+		justify-items: center;
+
+		span {
+			width: 2.5rem;
+			align-self: center;
+			justify-self: center;
+		}
+
+		span::before,
+		span::after {
+			display: inline-block;
+			position: absolute;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba($color-red, 0.7),
+				rgba($color-blue, 0.7)
+			);
+			height: 3px;
+			width: 2.5rem;
+			transition: transform 0.3s;
+		}
+
+		span::before {
+			content: "";
+			transform: rotate(-45deg);
+		}
+
+		span::after {
+			content: "";
+			transform: rotate(45deg);
+		}
+	}
+
+	&__btn:hover span::before {
+		//transform: scale(2);
+	}
+
+	&__btn:hover span::after {
+		//transform: scale(2);
+	}
+}

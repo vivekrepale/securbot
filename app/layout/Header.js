@@ -41,7 +41,7 @@ const Header = () => {
 					/>
 
 					<a
-						href="mailto:vivekrepale@gmail.com"
+						href="mailto:enquiry@securbot.in"
 						className="header__contact-links__call-mail__link "
 					>
 						enquiry@securbot.in

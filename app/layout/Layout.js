@@ -4,10 +4,8 @@ import { Link, Route, Switch, HashRouter as Router } from "react-router-dom";
 //Components
 import HeaderLogo from "./HeaderLogo";
 import Header from "./Header";
+import NavBar from "./NavBar.js";
 import Footer from "./Footer";
-import NavBar2 from "./NavBar2.js";
-import Footer2 from "./Footer2";
-//import NavBar from "./NavBar.js";
 import Practice from "../components/Practice";
 
 import Home from "../components/Home.js";
@@ -21,7 +19,7 @@ const Layout = () => {
 	return (
 		<Router>
 			<div className="layout__navbar">
-				<NavBar2 />
+				<NavBar />
 			</div>
 			<div className="header-logo">
 				<HeaderLogo />
@@ -60,7 +58,7 @@ const Layout = () => {
 				</div>
 
 				<div className="layout__footer">
-					<Footer2 />
+					<Footer />
 				</div>
 			</div>
 		</Router>

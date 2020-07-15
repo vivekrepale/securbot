@@ -1,61 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+
+import NavListModal from "../components/modals/NavListModal";
 
 const NavBar = () => {
+	const [displayNavList, setDisplayNavList] = useState(false);
+
+	const toggleDisplayNavList = () => {
+		if (displayNavList) {
+			setDisplayNavList(false);
+		} else {
+			setDisplayNavList(true);
+		}
+	};
+
 	return (
-		<div className="nav">
-			<ul className="nav__nav-list">
-				<li className="nav__nav-list__nav-item">
-					<Link to="/" className="nav__nav-list__nav-item__nav-link">
-						Home
-					</Link>
-				</li>
+		<div className="navigation">
+			<label onClick={toggleDisplayNavList} className="navigation__btn">
+				<span></span>
+			</label>
 
-				<li className="nav__nav-list__nav-item">
-					<Link
-						to="/about-us"
-						className="nav__nav-list__nav-item__nav-link"
-					>
-						About us
-					</Link>
-				</li>
+			{displayNavList ? (
+				<NavListModal toggleDisplayNavList={toggleDisplayNavList} />
+			) : (
+				""
+			)}
 
-				<li className="nav__nav-list__nav-item">
-					<Link
-						to="/services-and-solutions"
-						className="nav__nav-list__nav-item__nav-link"
-					>
-						Solutions and services
-					</Link>
-				</li>
-
-				<li className="nav__nav-list__nav-item">
-					<Link
-						to="/products"
-						className="nav__nav-list__nav-item__nav-link"
-					>
-						Products
-					</Link>
-				</li>
-
-				<li className="nav__nav-list__nav-item">
-					<Link
-						to="/testimonials"
-						className="nav__nav-list__nav-item__nav-link"
-					>
-						Testimonials
-					</Link>
-				</li>
-
-				<li className="nav__nav-list__nav-item">
-					<Link
-						to="/contact-us"
-						className="nav__nav-list__nav-item__nav-link"
-					>
-						Contact us
-					</Link>
-				</li>
-			</ul>
+			{/**<CSSTransition
+				timeout={100}
+				in={displayNavList}
+				classNames="navigation__nav__background"
+				unmountOnExit
+			>
+				<NavList />
+			</CSSTransition>**/}
 		</div>
 	);
 };

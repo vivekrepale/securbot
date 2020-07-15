@@ -1,11 +1,11 @@
 .footer {
 	&__offices {
 		display: grid;
-		margin: 0 0rem;
+		//margin: 0 8rem;
 
 		&__office {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 			//This fits 2 elemet of size 300px each or greater, bolow that we get a new row.
 
 			&__googleMap {
@@ -26,7 +26,7 @@
 				background-image: linear-gradient(
 					to bottom,
 					rgba(black, 0.3),
-					rgba($color-primary, 1)
+					rgba($color-black, 1)
 				);
 			}
 		}

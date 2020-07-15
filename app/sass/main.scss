@@ -6,13 +6,15 @@
 
 @import "items/button";
 
-@import "components/layout";
-@import "components/header";
-@import "components/header-logo";
-//@import "components/navbar";
-@import "components/navbar2";
-@import "components/navlist";
-//@import "components/footer";
-@import "components/footer2";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/header-logo";
+@import "layout/navbar";
+@import "layout/footer";
+
 @import "components/practice";
 @import "components/home";
+@import "components/contactUsForm";
+
+@import "components/navlistModal";
+@import "components/contactUsModal";

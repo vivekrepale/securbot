@@ -1,6 +1,6 @@
 .layout {
 	display: grid;
-	grid-template-rows: 70vh min-content min-content min-content min-content;
+	grid-template-rows: 80vh min-content min-content min-content min-content;
 	grid-template-columns:
 		[full-start] 1fr [center-start] repeat(
 			8,
@@ -31,6 +31,6 @@
 	&__footer {
 		grid-row: 4 / 5;
 		grid-column: full-start / full-end;
-		background-color: $color-primary;
+		background-color: $color-white;
 	}
 }
