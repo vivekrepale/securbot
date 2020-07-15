@@ -1,6 +1,3 @@
-import Layout from "../app/layout/Layout.js";
-const Layout = <Layout />;
-
 exports.handler = function (event, context, callback) {
 	let body;
 	if (event.body) {
@@ -8,9 +5,14 @@ exports.handler = function (event, context, callback) {
 	} else {
 		body = {};
 	}
+	const name = event.body.name;
+	const email = event.body.email;
 
 	callback(null, {
 		statusCode: 200,
-		body: Layout,
+		body: {
+			name: name,
+			email: email,
+		},
 	});
 };
