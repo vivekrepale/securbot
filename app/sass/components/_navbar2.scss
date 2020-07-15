@@ -1,11 +1,42 @@
 .navigation {
+	&__background {
+		position: fixed;
+		top: 6rem;
+		right: 6rem;
+		height: 4rem;
+		width: 4rem;
+		border-radius: 50%;
+		background-image: radial-gradient(rgba(#b30000, 0.8), rgba(#0000b3, 1));
+		z-index: 2000;
+		//transform: scale(80);
+
+		@media only screen and (max-width: 46.25em) {
+			top: 3.5rem;
+			right: 3.5rem;
+			height: 4rem;
+			width: 4rem;
+		}
+
+		@media only screen and (max-width: 28.75em) {
+			top: 2rem;
+			right: 2rem;
+		}
+
+		@media only screen and (max-width: 20.625em) {
+			top: 1rem;
+			right: 1rem;
+			height: 3rem;
+			width: 3rem;
+		}
+	}
+
 	&__btn {
 		position: fixed;
 		top: 5.5rem;
 		right: 5.5rem;
 		height: 6rem;
 		width: 6rem;
-		background-color: $color-primary;
+		background-color: $color-secondary;
 		z-index: 4000;
 		border-radius: 50%;
 		cursor: pointer;
@@ -19,20 +50,24 @@
 			width: 5rem;
 		}
 
-		@media only screen and (max-width: 28.75em) {
-			top: 2rem;
-			right: 2rem;
-		}
+		// @media only screen and (max-width: 28.75em) {
+		// 	top: 2rem;
+		// 	right: 2rem;
+		// }
 
 		@media only screen and (max-width: 20.625em) {
-			top: 1rem;
-			right: 1rem;
+			// top: 2rem;
+			// right: 2rem;
 			height: 4rem;
 			width: 4rem;
 		}
 
 		span {
-			background-color: $color-secondary;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba($color-red, 0.7),
+				rgba($color-blue, 0.7)
+			);
 			height: 2px;
 			width: 2.5rem;
 			align-self: center;
@@ -47,7 +82,11 @@
 		span::after {
 			display: inline-block;
 			position: absolute;
-			background-color: $color-secondary;
+			background-image: linear-gradient(
+				to bottom right,
+				rgba($color-red, 0.7),
+				rgba($color-blue, 0.7)
+			);
 			height: 2px;
 			width: 2.5rem;
 			transition: transform 0.3s;
@@ -94,81 +133,6 @@
 
 	&__checkbox {
 		display: none;
-	}
-
-	&__nav {
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		z-index: 3500;
-
-		//visibility: hidden;
-
-		display: grid;
-		justify-content: center;
-		align-content: center;
-		text-align: center;
-
-		&__background {
-			position: fixed;
-			top: 6rem;
-			right: 6rem;
-			height: 4rem;
-			width: 4rem;
-			border-radius: 50%;
-			background-image: radial-gradient(
-				$color-primary,
-				$color-primary,
-				$color-primary-light
-			);
-			z-index: 2000;
-			transform: scale(80);
-
-			@media only screen and (max-width: 46.25em) {
-				top: 3.5rem;
-				right: 3.5rem;
-				height: 4rem;
-				width: 4rem;
-			}
-
-			@media only screen and (max-width: 28.75em) {
-				top: 2rem;
-				right: 2rem;
-			}
-
-			@media only screen and (max-width: 20.625em) {
-				top: 1rem;
-				right: 1rem;
-				height: 3rem;
-				width: 3rem;
-			}
-		}
-
-		&__list {
-			&__item {
-				list-style-type: none;
-
-				&__link {
-					&,
-					&:link,
-					&:visited {
-						color: $color-secondary;
-						text-decoration: none;
-						display: inline-block;
-						padding: 1rem;
-						margin: 1rem;
-						background-color: transparent;
-					}
-
-					&:hover,
-					&:active {
-						color: $color-primary;
-						background-color: $color-secondary;
-						//transition: background-color 0.5s;
-					}
-				}
-			}
-		}
 	}
 
 	// &__checkbox:checked ~ &__nav {

@@ -1,7 +1,9 @@
 import React from "react";
 import LogoIamge from "../assets/images/logo.png";
 //import { Link } from "react-router-dom";
-import Sprite from "../assets/svg/sprite.svg";
+//import Sprite from "../assets/svg/sprite.svg";
+import SvgCall from "../components/svg/call.js";
+import SvgEmail from "../components/svg/email.js";
 
 const Header = () => {
 	return (
@@ -17,24 +19,34 @@ const Header = () => {
 				</h2>
 			</div>
 			<div className="header__contact-links">
-				<span>
-					Call:{" "}
+				<div className="header__contact-links__call-mail">
+					<SvgCall
+						className="header__contact-links__call-mail__icon"
+						fill="white"
+						stroke="white"
+					/>
+
 					<a
 						href="tel:+918080605001"
-						className="header__contact-links__link"
+						className="header__contact-links__call-mail__link "
 					>
 						+918080605001
 					</a>
-				</span>
-				<span>
-					Enquiry:{" "}
+				</div>
+				<div className="header__contact-links__call-mail">
+					<SvgEmail
+						className="header__contact-links__call-mail__icon"
+						fill="white"
+						stroke="white"
+					/>
+
 					<a
 						href="mailto:vivekrepale@gmail.com"
-						className="header__contact-links__link"
+						className="header__contact-links__call-mail__link "
 					>
 						enquiry@securbot.in
 					</a>
-				</span>
+				</div>
 			</div>
 		</header>
 	);
