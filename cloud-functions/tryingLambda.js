@@ -1,3 +1,6 @@
+import Layout from "../app/layout/Layout.js";
+const Layout = <Layout />;
+
 exports.handler = function (event, context, callback) {
 	let body;
 	if (event.body) {
@@ -8,6 +11,6 @@ exports.handler = function (event, context, callback) {
 
 	callback(null, {
 		statusCode: 200,
-		body: body,
+		body: Layout,
 	});
 };
