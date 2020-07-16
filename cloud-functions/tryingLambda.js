@@ -46,6 +46,6 @@ const sendEmail = aysnc () => {
 
 
 exports.handler = function (event, context, callback) {
-	await sendMail().then(() => callback(null, { statusCode: 200, message: "Email sent" }))
+	await sendEmail().then(() => callback(null, { statusCode: 200, message: "Email sent" }))
 	.catch((err) => callback(err, null))
 };
