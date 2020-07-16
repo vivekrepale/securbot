@@ -23,7 +23,7 @@ const nodemailer = require("nodemailer");
 // 		.catch((err) => callback(err, null));
 // };
 
-const sendEmail = aysnc (options) => {
+const sendEmail = aysnc () => {
 
 	const transporter = nodemailer.createTransport({
 		service: "Gmail",
