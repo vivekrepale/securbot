@@ -12,14 +12,18 @@ const client = nodemailer.createTransport(sgTransport(options));
 
 const email = {
 	from: "siddhartenterprises1234@gmail.com",
-	to: "vivekrepale@gmail,.com",
+	to: "vivekrepale@gmail.com",
 	subject: "hello there",
 	text: "I am being sent from sendgrid",
 };
 
 exports.handler = function (event, context, callback) {
-	client
-		.sendMail(email)
-		.then(() => callback(null, { statusCode: 200, message: "Email sent" }))
-		.catch((err) => callback(err, null));
+	// .then(() => callback(null, { statusCode: 200, message: "Email sent" }))
+	// .catch((err) => callback(err, null));
+	try {
+		client.sendMail(email);
+		console.log("Message sent");
+	} catch (err) {
+		console.log(err);
+	}
 };
