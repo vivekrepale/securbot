@@ -11,7 +11,7 @@ const options = {
 const client = nodemailer.createTransport(sgTransport(options));
 
 const email = {
-	from: "siddharthenterprises1234@gmail.com",
+	from: "siddhartenterprises1234@gmail.com",
 	to: "vivekrepale@gmail,.com",
 	subject: "hello there",
 	text: "I am being sent from sendgrid",
