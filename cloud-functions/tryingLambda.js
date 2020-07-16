@@ -18,12 +18,8 @@ const email = {
 };
 
 exports.handler = function (event, context, callback) {
-	// .then(() => callback(null, { statusCode: 200, message: "Email sent" }))
-	// .catch((err) => callback(err, null));
-	try {
-		client.sendMail(email);
-		console.log("Message sent");
-	} catch (err) {
-		console.log(err);
-	}
+	client
+		.sendMail(email)
+		.then(() => callback(null, { statusCode: 200, message: "Email sent" }))
+		.catch((err) => callback(err, null));
 };
