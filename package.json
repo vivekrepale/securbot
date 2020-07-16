@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "lambda-serve": "netlify-lambda serve cloud-functions",
+    "lambda-build": "netlify-lambda build cloud-functions"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,8 @@
   },
   "homepage": "https://github.com/vivekrepale/securbot#readme",
   "dependencies": {
-    "file-loader": "^6.0.0",
-    "nodemailer": "^6.4.10",
-    "prettier": "^2.0.5",
+    "@sendgrid/mail": "^7.2.1",
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -33,10 +34,13 @@
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
     "fs-extra": "^9.0.1",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "netlify-lambda": "^2.0.0",
     "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
     "react-inlinesvg": "^2.0.0",
     "sass-loader": "^9.0.1",
     "style-loader": "^1.2.1",
