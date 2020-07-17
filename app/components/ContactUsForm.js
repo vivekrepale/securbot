@@ -12,7 +12,7 @@ const ContactUsForm = (props) => {
 		//alert("You submitted the form!!");
 
 		await Axios.post(
-			"https://securbot.netlify.app/.netlify/functions/sendEmail",
+			"http://localhost:9000/.netlify/functions/sendEmail.js",
 			{
 				name: name,
 				contact: contact,
@@ -21,15 +21,18 @@ const ContactUsForm = (props) => {
 			}
 		).then(
 			(response) => {
-				if (response.statusCode == 200) {
-					props.toggleDisplayForm();
-					props.toggleDisplaySuccessMessage();
-				} else if (response.statusCode == 502) {
-					props.toggleDisplayErrorMessage();
-				}
+				// if (response.statusCode == 200) {
+				// 	props.toggleDisplayForm();
+				// 	props.toggleDisplaySuccessMessage();
+				// } else if (response.statusCode == 502) {
+				// 	props.toggleDisplayErrorMessage();
+				// 	props.toggleDisplayForm();
+				// }
+				console.log(response);
 			},
 			(err) => {
 				props.toggleDisplayErrorMessage();
+				props.toggleDisplayForm();
 			}
 		);
 	};
