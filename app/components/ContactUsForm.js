@@ -12,7 +12,7 @@ const ContactUsForm = (props) => {
 		//alert("You submitted the form!!");
 
 		await Axios.post(
-			"http://localhost:9000/.netlify/functions/sendEmail.js",
+			"https://securbot.netlify.app/.netlify/functions/sendEmail",
 			{
 				name: name,
 				contact: contact,
@@ -79,3 +79,5 @@ const ContactUsForm = (props) => {
 };
 
 export default ContactUsForm;
+
+//http://localhost:9000/.netlify/functions/sendEmail.js
