@@ -10,20 +10,28 @@ const ContactUsForm = (props) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		//alert("You submitted the form!!");
-		try {
-			await Axios.post(
-				"https://securbot.netlify.app/.netlify/functions/sendEmail",
-				{
-					name: name,
-					contact: contact,
-					pincode: pincode,
-					requirement: requirement,
+
+		await Axios.post(
+			"https://securbot.netlify.app/.netlify/functions/sendEmail",
+			{
+				name: name,
+				contact: contact,
+				pincode: pincode,
+				requirement: requirement,
+			}
+		).then(
+			(response) => {
+				if (response.statusCode == 200) {
+					props.toggleDisplayForm();
+					props.toggleDisplaySuccessMessage();
+				} else if (response.statusCode == 502) {
+					props.toggleDisplayErrorMessage();
 				}
-			);
-			console.log("Eamil was successfully sent");
-		} catch (err) {
-			console.log(err);
-		}
+			},
+			(err) => {
+				props.toggleDisplayErrorMessage();
+			}
+		);
 	};
 
 	return (
