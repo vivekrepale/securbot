@@ -14,9 +14,10 @@
 	display: grid;
 	//grid-template-rows: 3rem;
 	justify-content: center;
-	align-items: end;
+	align-items: start;
+	overflow: auto;
 
-	padding: 4rem;
+	//padding: 4rem;
 
 	&__notice {
 		color: $color-white;

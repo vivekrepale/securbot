@@ -1,8 +1,9 @@
 .container {
 	display: grid;
-	grid-template-rows: 100vh;
-	justify-items: center;
-	align-items: center;
+	grid-template-rows: max-content;
+	// justify-items: center;
+	// align-items: center;
+	padding: 6rem 0;
 
 	&__form {
 		display: grid;
@@ -24,6 +25,7 @@
 			background-color: $color-white;
 			font-size: 1.5rem;
 			border-width: 0;
+			cursor: pointer;
 
 			&:hover,
 			&:active {
