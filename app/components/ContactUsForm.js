@@ -17,7 +17,7 @@ const ContactUsForm = (props) => {
 			{
 				name: name,
 				contact: contact,
-				eamil: email,
+				email: email,
 				pincode: pincode,
 				requirement: requirement,
 			}
