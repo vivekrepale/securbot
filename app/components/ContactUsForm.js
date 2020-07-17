@@ -4,6 +4,7 @@ import Axios from "axios";
 const ContactUsForm = (props) => {
 	const [name, setName] = useState();
 	const [contact, setContact] = useState();
+	const [email, setEmail] = useState();
 	const [pincode, setPincode] = useState();
 	const [requirement, setRequirement] = useState();
 
@@ -16,18 +17,19 @@ const ContactUsForm = (props) => {
 			{
 				name: name,
 				contact: contact,
+				eamil: email,
 				pincode: pincode,
 				requirement: requirement,
 			}
 		).then(
 			(response) => {
-				// if (response.statusCode == 200) {
-				// 	props.toggleDisplayForm();
-				// 	props.toggleDisplaySuccessMessage();
-				// } else if (response.statusCode == 502) {
-				// 	props.toggleDisplayErrorMessage();
-				// 	props.toggleDisplayForm();
-				// }
+				if (response.status == 200) {
+					props.toggleDisplayForm();
+					props.toggleDisplaySuccessMessage();
+				} else if (response.status == 502) {
+					props.toggleDisplayErrorMessage();
+					props.toggleDisplayForm();
+				}
 				console.log(response);
 			},
 			(err) => {
@@ -51,6 +53,13 @@ const ContactUsForm = (props) => {
 					onChange={(e) => setContact(e.target.value)}
 					type="text"
 					placeholder="Your contact number!"
+					className="container__form__input"
+				/>
+
+				<input
+					onChange={(e) => setEmail(e.target.value)}
+					type="text"
+					placeholder="Your contact email!"
 					className="container__form__input"
 				/>
 
