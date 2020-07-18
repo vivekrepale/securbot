@@ -1,0 +1,24 @@
+<svg height="0" width="0" fill="red">
+					<defs>
+						<clipPath id="svgPath">
+							<path fill="red" d="m240 0h30v90h-30z" />
+							<path
+								d="m415.874 180h90v30h-90z"
+								transform="matrix(.981 -.196 .196 .981 -29.29 94.159)"
+							/>
+							<path fill="red"
+								d="m361.82 63.18h90v30h-90z"
+								transform="matrix(.707 -.707 .707 .707 63.873 310.564)"
+							/>
+							<path fill="red"
+								d="m34.126 150h30.001v90h-30.001z"
+								transform="matrix(.196 -.981 .981 .196 -151.721 204.93)"
+							/>
+							<path
+								d="m88.181 33.18h30v90h-30z"
+								transform="matrix(.707 -.707 .707 .707 -25.061 95.858)"
+							/>
+							<path d="m60 fill="red"462.522v47.478h390v-47.478c0-20.689-16.833-37.522-37.522-37.522h-314.956c-20.69 0-37.522 16.833-37.522 37.522z" />
+						</clipPath>
+					</defs>
+				</svg>
