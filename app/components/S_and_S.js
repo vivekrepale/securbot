@@ -1,23 +1,26 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-import ssCommercial from "../assets/images/ssCommercial.png";
-import ssResidential from "../assets/images/ssResidential.png";
-import ssAccessControl from "../assets/images/ssAccessControl.png";
-import ssPublicAddress from "../assets/images/ssPublicAddress.png";
-import ssAMC from "../assets/images/ssAMC.png";
-import ssGSM1_1 from "../assets/images/ssGSM1-1.png";
-import ssGSM1_2 from "../assets/images/ssGSM1-2.png";
-import ssGSM2 from "../assets/images/ssGSM2.png";
-import ssGSM3 from "../assets/images/ssGSM3.png";
-import ssGSM4 from "../assets/images/ssGSM4.png";
-import ssGSM5 from "../assets/images/ssGSM5.png";
-import ssGSM6 from "../assets/images/ssGSM6.png";
+import ssCommercial from "../assets/images/ssCommercial_small.png";
+import ssResidential from "../assets/images/ssResidential_small.png";
+import ssAccessControl from "../assets/images/ssAccessControl_small.png";
+import ssPublicAddress from "../assets/images/ssPublicAddress_small.png";
+import ssAMC from "../assets/images/ssAMC_small.png";
+import ssGSM1_1 from "../assets/images/ssGSM1-1_small.png";
+import ssGSM1_2 from "../assets/images/ssGSM1-2_small.png";
+import ssGSM2 from "../assets/images/ssGSM2_small.png";
+import ssGSM3 from "../assets/images/ssGSM3_small.png";
+import ssGSM4 from "../assets/images/ssGSM4_small.png";
+import ssGSM5 from "../assets/images/ssGSM5_small.png";
+import ssGSM6 from "../assets/images/ssGSM6_small.png";
 
 import SvgCctv2 from "../components/svg/cctv2.js";
 import SvgCctvPhone from "../components/svg/cctv-phone.js";
 import SvgCctv1 from "../components/svg/cctv1.js";
 import SvgCctvWifi from "../components/svg/cctv-wifi.js";
+import SvgAlarm from "../components/svg/alarm.js";
+import SvgDiamond from "../components/svg/diamond.js";
+import SvgAccess from "../components/svg/access.js";
 
 const S_and_S = () => {
 	return (
@@ -27,8 +30,8 @@ const S_and_S = () => {
 				<div className="sscontainer__s__text">
 					<h3>Our commercial CCTV solutions!</h3>
 					<p>
-						Keep an eye on your store or office with our commercial
-						CCTV solutions.
+						Keep an eye on your store or office with our state of
+						the art commercial CCTV solutions.
 					</p>
 				</div>
 				<div className="sscontainer__s__image">
@@ -37,11 +40,15 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--2">
-				<SvgCctv1 fill="black" stroke="white" className="svg" />
+				<SvgCctv1
+					fill="black"
+					stroke="white"
+					className="svg svg--right"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our residential CCTV solutions!</h3>
 					<p>
-						Secure you home and valuable with our state of the art
+						Secure you home and valuable with our best quality
 						residential CCTV solutions.
 					</p>
 				</div>
@@ -51,19 +58,20 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--3">
-				<SvgCctvPhone fill="black" stroke="white" className="svg" />
+				<SvgCctvWifi fill="black" stroke="white" className="svg " />
 				<div className="sscontainer__s__text">
-					<h3>Our Access Control System!</h3>
+					<h3>Wifi GSM Security Alarm!</h3>
 					<p>
-						Keep an eye on all ins and out using our access control
-						system services.
+						WiFi GSM Security Alarm System ​ SecurBot Wireless
+						security system sets are protecting Homes, Shops and
+						Offices anywhere from unpleasant characters.
 					</p>
 				</div>
 				<div className=" sscontainer__s--3__image">
 					<img
 						src={ssGSM1_1}
 						alt="ssGSM1_1"
-						className="sscontainer__s--3__image__img"
+						className="sscontainer__s--3__image__img sscontainer__s--3__image__img--1"
 					/>
 					<img
 						src={ssGSM2}
@@ -99,7 +107,7 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--4">
-				<SvgCctvWifi fill="black" stroke="white" className="svg" />
+				<SvgCctvPhone fill="black" stroke="white" className="svg " />
 				<div className="sscontainer__s__text">
 					<h3>Our Public Address System!</h3>
 					<p>
@@ -114,7 +122,7 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--5">
-				<SvgCctv2 fill="black" stroke="white" className="svg" />
+				<SvgAccess fill="black" stroke="white" className="svg" />
 				<div className="sscontainer__s__text">
 					<h3>Our Access Control System!</h3>
 					<p>
@@ -128,7 +136,7 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--6">
-				<SvgCctv1 fill="black" stroke="white" className="svg" />
+				<SvgDiamond fill="black" stroke="white" className="svg" />
 				<div className="sscontainer__s__text">
 					<h3>Annual Maintenance Contract!</h3>
 					<p>
@@ -137,19 +145,21 @@ const S_and_S = () => {
 					</p>
 				</div>
 				<div className="sscontainer__s__image">
-					<img src={ssAMC} alt="ssAMC" />
+					<img
+						src={ssAMC}
+						alt="ssAMC"
+						className="sscontainer__s__image__AMC-LOGO"
+					/>
 				</div>
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--7">
-				<SvgCctv2 fill="black" stroke="white" className="svg" />
+				<SvgAlarm fill="black" stroke="white" className="svg" />
 				<div className="sscontainer__s__text">
 					<h3>Our Fire Alarm system!</h3>
 					<p>
-						We undertake annual maintenance contract for CCTV
-						systems. Under this contract our technicians visits the
-						client as per selected AMC plan As well as our
-						technicians do visit on call basis also.
+						We deploy the most optimum fire alarm systems for your
+						infrastructure to premises and keep it safe 24/7.
 					</p>
 				</div>
 				<div className="sscontainer__s__image">

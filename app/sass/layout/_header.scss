@@ -9,7 +9,7 @@
 			rgba($color-red, 0.7),
 			rgba($color-blue, 0.7)
 		),
-		url(../assets/images/bgDesktop2_phone.jpg);
+		url(../assets/images/bgDesktop2_mob_med.jpg);
 	background-size: cover;
 	z-index: 0;
 
@@ -27,7 +27,7 @@
 		padding: 0 1.5rem;
 		background-image: linear-gradient(
 				to bottom right,
-				rgba($color-black, 0.7),
+				rgba($color-red, 0.7),
 				rgba($color-blue, 0.7)
 			),
 			url(../assets/images/bgDesktop2_large.jpg);

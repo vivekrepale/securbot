@@ -1,5 +1,5 @@
 .sscontainer {
-	margin: 5rem 0rem;
+	margin: 5rem 5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 45rem);
@@ -18,12 +18,6 @@
 		background-color: white;
 		border: 2px solid;
 		border-image: linear-gradient(red, blue) 10%;
-		// background-image: radial-gradient(
-		// 	rgba(red, 0.2),
-		// 	rgba(blue, 0.2),
-		// 	rgba(black, 0.2)
-		// );
-		//border-radius: 0% 0% 50% 50%;
 		display: grid;
 		justify-items: center;
 		overflow: visible;
@@ -58,9 +52,15 @@
 				//margin: 1.5rem 8rem;
 
 				&__img {
-					width: 20rem;
+					width: 19rem;
 					height: 18rem;
 					object-fit: contain;
+
+					&--1 {
+						grid-column: 1 / 3;
+						justify-self: center;
+						width: 24rem;
+					}
 
 					@media only screen and (max-width: 68.75em) {
 						width: 18rem;
@@ -71,11 +71,6 @@
 						width: 14rem;
 						height: 13rem;
 					}
-
-					// @media only screen and (max-width: 62.5em) {
-					// 	width: 18rem;
-					// 	height: 16rem;
-					// }
 				}
 			}
 
@@ -124,6 +119,11 @@
 		&__image {
 			//margin: 0 auto;
 
+			&__AMC-LOGO {
+				width: 20rem;
+				height: 20rem;
+			}
+
 			img {
 				width: 30rem;
 				height: 30rem;
@@ -145,6 +145,10 @@
 			h3 {
 				font-size: 3rem;
 				//padding: 3rem 5rem;
+
+				@media only screen and (max-width: 28.75em) {
+					font-size: 2rem;
+				}
 			}
 
 			p {
@@ -152,6 +156,12 @@
 				margin-top: 3rem;
 				margin-left: 4rem;
 				//padding: 3rem 5rem;
+
+				@media only screen and (max-width: 28.75em) {
+					font-size: 1.3rem;
+					margin-top: 3rem;
+					margin-left: 2rem;
+				}
 			}
 		}
 	}
@@ -162,9 +172,13 @@
 	//left: 8rem;
 	transform: translateY(-22px);
 	//transform: translateX(10px);
-	height: 6rem;
-	width: 6rem;
+	height: 5rem;
+	width: 5rem;
 	justify-self: start;
 	background-color: white;
 	z-index: 5;
+
+	&--right {
+		justify-self: end;
+	}
 }
