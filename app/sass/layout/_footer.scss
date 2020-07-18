@@ -1,41 +1,214 @@
 .footer {
-	&__offices {
+	display: grid;
+	grid-template-rows: repeat(5, min-content);
+	background-image: linear-gradient(
+			to bottom right,
+			rgba($color-red, 0.9),
+			rgba($color-blue, 0.9)
+		),
+		url(../assets/images/bgDesktop2_large.jpg);
+	background-size: cover;
+
+	&__flag {
+		grid-column: 1fr;
+		padding: 1rem 0;
+		justify-self: center;
+
+		img {
+			width: 8rem;
+			height: 6rem;
+			box-shadow: 0px 15px 6px -6px rgba($color-black, 0.4);
+		}
+	}
+
+	&__goi {
 		display: grid;
-		//margin: 0 8rem;
+		grid-template-columns: repeat(3, minmax(min-content, 1fr));
+		justify-items: center;
+		align-items: center;
+		color: white;
+		padding: 2rem 0;
+		font-size: 1.5rem;
 
-		&__office {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-			//This fits 2 elemet of size 300px each or greater, bolow that we get a new row.
+		@media only screen and (max-width: 55em) {
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: 1fr;
+		}
 
-			&__googleMap {
-				&__map {
-					width: 100%;
-					height: 70vh;
-				}
+		img {
+			height: 22rem;
+			width: 22rem;
+			object-fit: contain;
+
+			@media only screen and (max-width: 62.625em) {
+				height: 16rem;
+				width: 16rem;
 			}
 
-			&__info {
-				display: grid;
-				grid-template-rows: min-content min-content min-content;
-				grid-template-columns: 1fr 1fr;
+			@media only screen and (max-width: 55em) {
+				height: 22rem;
+				width: 22rem;
+			}
 
-				grid-gap: 3rem;
+			@media only screen and (max-width: 55em) {
+				height: 16rem;
+				width: 16rem;
+			}
+		}
 
-				padding: 4rem;
-				background-image: linear-gradient(
-					to bottom,
-					rgba(black, 0.3),
-					rgba($color-black, 1)
-				);
+		&__india-mart {
+			// grid-column: 1/3;
+			background-color: rgba(pink, 0.5);
+			box-shadow: 10px 12px 6px -6px rgba($color-black, 0.2);
+			padding: 0rem 4rem;
+			border-radius: 50% 0 50% 0;
+		}
+
+		&__digital-india {
+			background-color: rgba(pink, 0.6);
+			box-shadow: 10px 12px 6px -6px rgba($color-black, 0.2);
+			border-radius: 50% 0 50% 0;
+			padding: 0rem 4rem;
+		}
+
+		&__atmanirbhar {
+			color: black;
+			background-color: rgba(pink, 0.5);
+			box-shadow: -10px 12px 6px -6px rgba($color-black, 0.2);
+			border-radius: 0 50% 0 50%;
+			padding: 0rem 4rem;
+		}
+
+		&__india-mart,
+		&__digital-india,
+		&__atmanirbhar {
+			@media only screen and (max-width: 55em) {
+				margin: 2rem 2rem;
+				border-radius: 0 0 50% 50%;
+				padding: 1rem 15rem;
+			}
+
+			@media only screen and (max-width: 36.25em) {
+				padding: 1rem 5rem;
 			}
 		}
 	}
-	&__phone-call-link {
-		&__icon {
-			width: 20rem;
-			height: 10rem;
-			visibility: hidden;
+
+	&__offices {
+		// display: grid;
+		// grid-template-rows: 2;
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		justify-content: center;
+
+		@media only screen and (max-width: 55em) {
+			grid-template-rows: repeat(2, max-content);
+			grid-template-columns: 1fr;
+		}
+
+		&__office {
+			display: grid;
+
+			background-color: rgba(black, 0.5);
+			border: 0px solid black;
+			border-radius: 3rem;
+			margin: 1rem 5rem;
+			box-shadow: 10px 12px 6px -6px rgba($color-black, 0.4);
+			font-size: 1.5rem;
+
+			@media only screen and (max-width: 61.25em) {
+				font-size: 1rem;
+			}
+
+			@media only screen and (max-width: 55em) {
+				justify-self: center;
+			}
+
+			@media only screen and (max-width: 28.75em) {
+				font-size: 0.8rem;
+			}
+
+			// @media only screen and (max-width: 23.75em) {
+			// 	font-size: 0.6rem;
+			// }
+
+			&__info {
+				color: white;
+
+				padding: 2rem 2.5rem;
+
+				&__location {
+					position: absolute;
+					//transform: translateY(-3.5rem);
+					//background-color: red;
+					padding: 1rem 2rem;
+					font-size: 2.4rem;
+					display: grid;
+					grid-auto-flow: column;
+
+					@media only screen and (max-width: 28.75em) {
+						font-size: 1.8rem;
+					}
+
+					@media only screen and (max-width: 23.75em) {
+						font-size: 1.5rem;
+					}
+
+					.f_svg {
+						width: 5rem;
+						height: 5rem;
+						transform: translateY(-2.5rem);
+
+						@media only screen and (max-width: 28.75em) {
+							width: 4rem;
+							height: 4rem;
+						}
+
+						@media only screen and (max-width: 21.25em) {
+							width: 3rem;
+							height: 3rem;
+							transform: translateY(-1.5rem);
+						}
+					}
+				}
+
+				&__address {
+					padding: 6rem 4rem 1rem 4rem;
+				}
+
+				&__contact {
+					padding: 1rem 4rem;
+				}
+			}
+		}
+	}
+
+	&__copyright {
+		font-size: 1.5rem;
+		justify-self: center;
+		color: white;
+		padding: 1rem;
+
+		@media only screen and (max-width: 28.75em) {
+			font-size: 1rem;
+		}
+	}
+
+	&__developer {
+		font-size: 1.2rem;
+		justify-self: center;
+		color: white;
+		padding: 1rem;
+
+		a:active,
+		a:hover,
+		a:link,
+		a:visited {
+			color: white;
+		}
+
+		@media only screen and (max-width: 28.75em) {
+			font-size: 1rem;
 		}
 	}
 }

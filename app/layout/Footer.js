@@ -1,58 +1,92 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import SvgLocation from "../components/svg/location.js";
+
+import IndianFlag from "../assets/images/f_flag.jpeg";
+import IndiaMart from "../assets/images/f_indiaMart.png";
+import DigitalIndia from "../assets/images/f_digitalIndia.png";
+import AtmanirbharBharat from "../assets/images/f_atmanirbhar.png";
+
+import SvgLocation from "../components/svg/location2.js";
 
 const Footer = () => {
+	const year = new Date().getYear() - 100 + 2000;
 	return (
 		<footer className="footer">
+			<div className="footer__flag">
+				<img src={IndianFlag} alt="Indian flag" />
+			</div>
+
+			<div className="footer__goi">
+				<div className="footer__goi__india-mart">
+					<img src={IndiaMart} alt="india-mart" />
+					<p>We are verified by Indiamart.</p>
+				</div>
+				<div className="footer__goi__digital-india">
+					<img src={DigitalIndia} alt="digital-india" />
+					<p>A Digital India initiative.</p>
+				</div>
+				<div className="footer__goi__atmanirbhar">
+					<img src={AtmanirbharBharat} alt="atmanirbhar" />
+					<p>Lets make India great again.</p>
+				</div>
+			</div>
+
 			<div className="footer__offices">
-				<div className="footer__offices__office">
-					<div className="footer__offices__office__googleMap">
-						<iframe
-							className="footer__offices__office__googleMap__map"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7998357388406!2d73.01596951442907!3d19.072536287089903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c16a8a799c07%3A0x4aea4241a7557ac4!2sSiddharth%20Enterprises!5e0!3m2!1sen!2sin!4v1594566494689!5m2!1sen!2sin"
-							// width="600"
-							// height="450"
-							frameBorder="0"
-							allowFullScreen=""
-							aria-hidden="false"
-							tabIndex="0"
-							//https://www.reddit.com/r/firefox/comments/fpptyj/firefox_content_security_policy_console_output/
-							//content-security-policy="object-src 'none';base-uri 'self';script-src 'nonce-xGcH8cULpuwtFbXcC3cvKQ==' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/geo-maps-api/1"
-						></iframe>
-					</div>
+				<div className="footer__offices__office footer__offices__office--1">
 					<div className="footer__offices__office__info ">
-						<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
+						<h4 className="footer__offices__office__info__location ">
+							<SvgLocation fill="red" className="f_svg" />
 							Mumbai (Head-office)
 						</h4>
-						<p className="footer__offices__office__info__address normalText--white">
-							SHOP No. 01, PLOT No. 112, Opp. BOMBAY PAINTS,
-							SECTOR - 23, JANTA MARKET, TURBHE STN RD, TURBHE,
-							NAVI MUMBAI, MAHARASHTRA. 400705
+						<p className="footer__offices__office__info__address ">
+							SHOP No. 01, <p>PLOT No. 112,</p> Opp. BOMBAY
+							PAINTS, SECTOR - 23,
+							<p>
+								{" "}
+								JANTA MARKET, TURBHE STN RD, TURBHE, NAVI
+								MUMBAI,
+							</p>{" "}
+							MAHARASHTRA. 400705
 						</p>
-						<div className="footer__offices__office__info__contact normalText--white">
-							<p>+91 8080605001</p>
-							<p>+91 9702327707</p>
-							<p>+91 8356038324</p>
+						<div className="footer__offices__office__info__contact ">
+							<p>+918080605001 +919702327707 +918356038324</p>
 						</div>
 					</div>
 				</div>
-				<div className="footer__offices__office">
+				<div className="footer__offices__office footer__offices__office--2">
 					<div className="footer__offices__office__info ">
 						<div className="footer__phone-call-link"></div>
 
-						<h4 className="footer__offices__office__info__location heading-4 heading-4--white ">
+						<h4 className="footer__offices__office__info__location ">
+							<SvgLocation fill="red" className="f_svg" />
 							Punjab
 						</h4>
-						<p className="footer__offices__office__info__address normalText--white">
-							1743/5, W. No.- 43, B-14, ISLAM GANJ, LUDHIANA.
-							PUNJAB. 141008
+						<p className="footer__offices__office__info__address ">
+							1743/5,<p> W. No.- 43, B-14,</p> ISLAM GANJ,
+							<p>LUDHIANA.</p>
+							<p>PUNJAB. 141008</p>
 						</p>
-						<div className="footer__offices__office__info__contact normalText--white">
-							<p>+91 8054963957</p>
+						<div className="footer__offices__office__info__contact ">
+							<p>+918054963957</p>
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div className="footer__copyright">
+				<p>
+					© {`${year} `} All rights reserved by Siddharth Enterprises.
+				</p>
+			</div>
+
+			<div className="footer__developer">
+				<p>Developed by: Vivek Repale.</p>
+				<p>
+					Contact:{" "}
+					<a href="mailto:vivekrepale@gmail.com">
+						vivekrepale@gmail.com
+					</a>
+				</p>
 			</div>
 		</footer>
 	);
