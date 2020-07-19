@@ -26,7 +26,11 @@ const S_and_S = () => {
 	return (
 		<div className="sscontainer">
 			<div className="sscontainer__s sscontainer__s--1">
-				<SvgCctv2 fill="black" stroke="white" className="svg" />
+				<SvgCctv1
+					fill="black"
+					stroke="white"
+					className="svg svg--right"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our commercial CCTV solutions!</h3>
 					<p>
@@ -40,11 +44,7 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--2">
-				<SvgCctv1
-					fill="black"
-					stroke="white"
-					className="svg svg--right"
-				/>
+				<SvgCctv2 fill="black" stroke="white" className="svg " />
 				<div className="sscontainer__s__text">
 					<h3>Our residential CCTV solutions!</h3>
 					<p>
@@ -107,7 +107,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--4">
-				<SvgCctvPhone fill="black" stroke="white" className="svg " />
+				<SvgCctvPhone
+					fill="black"
+					stroke="white"
+					className="svg svg--center"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Public Address System!</h3>
 					<p>
@@ -122,7 +126,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--5">
-				<SvgAccess fill="black" stroke="white" className="svg" />
+				<SvgAccess
+					fill="black"
+					stroke="white"
+					className="svg svg--right"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Access Control System!</h3>
 					<p>
@@ -154,7 +162,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--7">
-				<SvgAlarm fill="black" stroke="white" className="svg" />
+				<SvgAlarm
+					fill="black"
+					stroke="white"
+					className="svg svg--center"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Fire Alarm system!</h3>
 					<p>

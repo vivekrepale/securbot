@@ -8,6 +8,7 @@
 		),
 		url(../assets/images/bgDesktop2_large.jpg);
 	background-size: cover;
+	color: white;
 
 	&__flag {
 		grid-column: 1fr;
@@ -26,13 +27,17 @@
 		grid-template-columns: repeat(3, minmax(min-content, 1fr));
 		justify-items: center;
 		align-items: center;
-		color: white;
-		padding: 2rem 0;
-		font-size: 1.5rem;
+		justify-content: center;
 
-		@media only screen and (max-width: 55em) {
-			grid-template-rows: repeat(3, 1fr);
-			grid-template-columns: 1fr;
+		padding: 2rem 0;
+		margin: 0 10rem;
+
+		@media only screen and (max-width: 45.625em) {
+			margin: 0 4rem;
+		}
+
+		@media only screen and (max-width: 29em) {
+			margin: 0;
 		}
 
 		img {
@@ -46,57 +51,38 @@
 			}
 
 			@media only screen and (max-width: 55em) {
-				height: 22rem;
-				width: 22rem;
-			}
-
-			@media only screen and (max-width: 55em) {
 				height: 16rem;
 				width: 16rem;
 			}
-		}
 
-		&__india-mart {
-		}
-
-		&__digital-india {
-		}
-
-		&__atmanirbhar {
+			@media only screen and (max-width: 33.75em) {
+				height: 12rem;
+				width: 12rem;
+			}
 		}
 
 		&__india-mart,
 		&__digital-india,
 		&__atmanirbhar {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-blue, 0.2),
-				rgba(lightgreen, 1)
-			);
-			box-shadow: 10px 12px 6px -6px rgba($color-black, 0.4);
 			padding: 0rem 4rem;
 			border-radius: 3px;
-			color: black;
-
-			@media only screen and (max-width: 55em) {
-				margin: 2rem 2rem;
-				padding: 1rem 15rem;
-			}
 
 			@media only screen and (max-width: 36.25em) {
-				padding: 1rem 5rem;
+				padding: 1rem 2rem;
+			}
+
+			@media only screen and (max-width: 23.75em) {
+				padding: 1rem 0rem;
 			}
 		}
 	}
 
 	&__offices {
-		// display: grid;
-		// grid-template-rows: 2;
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
 		justify-content: center;
 
-		@media only screen and (max-width: 55em) {
+		@media only screen and (max-width: 45.625em) {
 			grid-template-rows: repeat(2, max-content);
 			grid-template-columns: 1fr;
 		}
@@ -115,33 +101,19 @@
 				font-size: 1rem;
 			}
 
-			@media only screen and (max-width: 55em) {
+			@media only screen and (max-width: 45.625em) {
 				justify-self: center;
 			}
 
-			@media only screen and (max-width: 28.75em) {
-				font-size: 0.8rem;
-			}
-
 			&__info {
-				color: white;
-
-				padding: 2rem 2.5rem;
+				padding: 2rem 1.5rem;
 
 				&__location {
 					position: absolute;
-					padding: 1rem 2rem;
-					font-size: 2.4rem;
+					padding: 1rem 0rem;
+					font-size: 2rem;
 					display: grid;
 					grid-auto-flow: column;
-
-					@media only screen and (max-width: 28.75em) {
-						font-size: 1.8rem;
-					}
-
-					@media only screen and (max-width: 23.75em) {
-						font-size: 1.5rem;
-					}
 
 					.f_svg {
 						width: 5rem;
@@ -149,24 +121,25 @@
 						transform: translateY(-2.5rem);
 
 						@media only screen and (max-width: 28.75em) {
-							width: 4rem;
-							height: 4rem;
+							width: 4.5rem;
+							height: 4.5rem;
 						}
 
 						@media only screen and (max-width: 21.25em) {
-							width: 3rem;
-							height: 3rem;
+							width: 4rem;
+							height: 4rem;
 							transform: translateY(-1.5rem);
 						}
 					}
 				}
 
 				&__address {
-					padding: 6rem 4rem 1rem 4rem;
+					padding: 5rem 4rem 1rem 4rem;
 				}
 
 				&__contact {
 					padding: 1rem 4rem;
+					font-size: 1.3rem;
 				}
 			}
 		}
@@ -175,7 +148,7 @@
 	&__copyright {
 		font-size: 1.5rem;
 		justify-self: center;
-		color: white;
+
 		padding: 1rem;
 
 		@media only screen and (max-width: 28.75em) {
@@ -186,7 +159,7 @@
 	&__developer {
 		font-size: 1.2rem;
 		justify-self: center;
-		color: white;
+
 		padding: 1rem;
 
 		a:active,

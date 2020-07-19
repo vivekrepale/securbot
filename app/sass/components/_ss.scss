@@ -143,24 +143,23 @@
 			margin: 3rem 5rem 0 5rem;
 
 			h3 {
-				font-size: 3rem;
-				//padding: 3rem 5rem;
+				font-size: 2rem;
+				font-weight: bold;
 
 				@media only screen and (max-width: 28.75em) {
-					font-size: 2rem;
+					font-size: 1.5rem;
 				}
 			}
 
 			p {
-				font-size: 1.5rem;
-				margin-top: 3rem;
-				margin-left: 4rem;
+				font-size: 1rem;
+				//margin-top: 3rem;
+				//margin-left: 4rem;
 				//padding: 3rem 5rem;
 
 				@media only screen and (max-width: 28.75em) {
-					font-size: 1.3rem;
-					margin-top: 3rem;
-					margin-left: 2rem;
+					//margin-top: 3rem;
+					//margin-left: 2rem;
 				}
 			}
 		}
@@ -180,5 +179,9 @@
 
 	&--right {
 		justify-self: end;
+	}
+
+	&--center {
+		justify-self: center;
 	}
 }

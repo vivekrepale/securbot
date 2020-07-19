@@ -22,7 +22,6 @@ const ContactUs = () => {
 				<div className="contact-us__contact__office">
 					<div className="contact-us__contact__office__address">
 						<h4 className="contact-us__contact__office__address__location">
-							<SvgLocation fill="red" className="f_svg-c" />
 							Mumbai (Head-office)
 						</h4>
 						<span className="contact-us__contact__office__address__text">
