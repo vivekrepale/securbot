@@ -54,6 +54,7 @@ const ContactUsModal = (props) => {
 					toggleDisplaySuccessMessage={toggleDisplaySuccessMessage}
 					toggleDisplayErrorMessage={toggleDisplayErrorMessage}
 					toggleDisplayForm={toggleDisplayForm}
+					modal={true}
 				/>
 			) : (
 				""

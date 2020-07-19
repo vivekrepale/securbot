@@ -1,6 +1,174 @@
-&__googleMap {
-	&__map {
-		width: 100%;
-		height: 70vh;
+.contact-us {
+	margin: 3rem 4rem;
+
+	@media only screen and (max-width: 32.5em) {
+		margin: 3rem 1rem;
+	}
+
+	&__contact {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 3rem;
+
+		@media only screen and (max-width: 55em) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, minmax(min-content, max-content));
+		}
+
+		&__map {
+			width: 100%;
+			height: 100%;
+			box-shadow: 5px 10px 6px -6px rgba(black, 0.1),
+				8px 10px 6px -6px rgba(black, 0.2),
+				10px 10px 6px -6px rgba(black, 0.3);
+
+			@media only screen and (max-width: 55em) {
+				height: 50vh;
+			}
+
+			@media only screen and (max-width: 32.5em) {
+				width: 80vw;
+				justify-self: center;
+			}
+		}
+
+		&__office {
+			display: grid;
+			grid-template-rows: max-content max-content;
+			grid-template-columns: minmax(max-content, 1fr);
+			grid-gap: 4rem;
+			justify-items: center;
+			color: white;
+			font-size: 1.2rem;
+
+			@media only screen and (max-width: 55em) {
+				margin: 0;
+			}
+
+			&__address {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-blue, 1),
+					rgba(green, 0.7)
+				);
+				box-shadow: 0px 10px 6px -6px rgba(black, 0.8),
+					0px 10px 6px -6px rgba(black, 0.2);
+				justify-self: center;
+				padding: 3rem 2rem;
+
+				@media only screen and (max-width: 32.5em) {
+					//margin: 1rem 0rem;
+				}
+
+				&__location {
+					font-size: 2rem;
+					// padding: 2rem 0;
+				}
+
+				&__text {
+					padding-top: 1rem;
+				}
+
+				&__phone {
+					padding-top: 1rem;
+					font-size: 1.5rem;
+				}
+			}
+
+			&__timing {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-blue, 1),
+					rgba(green, 0.7)
+				);
+				box-shadow: 0px 10px 6px -6px rgba(black, 0.8),
+					0px 10px 6px -6px rgba(black, 0.2);
+				justify-items: start;
+				align-items: center;
+				grid-template-rows: 1fr 1fr 1fr;
+				padding: 1rem;
+
+				&__time {
+					text-align: center;
+					//margin-top: 0.5rem;
+				}
+
+				&__day {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(max-content, 1fr));
+		justify-items: center;
+		justify-content: center;
+		grid-gap: 3rem;
+		margin: 2rem 0;
+		font-size: 1.5rem;
+		color: white;
+
+		@media only screen and (max-width: 55em) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(auto-fit, max-content);
+			margin: 0;
+		}
+
+		&__facebook {
+			// border: 2px solid black;
+			padding: 2rem 4rem;
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-blue, 0.7),
+				rgba(green, 0.7)
+			);
+
+			box-shadow: 0px 10px 6px -6px rgba(black, 0.8),
+				0px 10px 6px -6px rgba(black, 0.2);
+			border-radius: 3px;
+
+			@media only screen and (max-width: 55em) {
+				padding: 2rem 10rem;
+				display: none;
+			}
+
+			&__iframe {
+				height: 50rem;
+				width: 100%;
+				padding: 3rem 0;
+				box-shadow: 5px 10px 6px -6px rgba(black, 0.1),
+					8px 10px 6px -6px rgba(black, 0.2),
+					10px 10px 6px -6px rgba(black, 0.3);
+			}
+
+			p {
+				margin-bottom: 3rem;
+			}
+		}
+
+		&__form-container {
+			//border: 2px solid black;
+			padding: 2rem 4rem;
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-blue, 1),
+				rgba(green, 0.7)
+			);
+			box-shadow: 0px 10px 6px -6px rgba(black, 0.8),
+				0px 10px 6px -6px rgba(black, 0.2);
+
+			@media only screen and (max-width: 55em) {
+				padding: 2rem 10rem;
+			}
+
+			@media only screen and (max-width: 32.5em) {
+				padding: 2rem 4rem;
+			}
+
+			&__form {
+			}
+		}
 	}
 }

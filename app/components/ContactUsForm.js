@@ -24,17 +24,35 @@ const ContactUsForm = (props) => {
 		).then(
 			(response) => {
 				if (response.status == 200) {
-					props.toggleDisplayForm();
-					props.toggleDisplaySuccessMessage();
+					if (props.modal) {
+						props.toggleDisplayForm();
+						props.toggleDisplaySuccessMessage();
+					} else {
+						alert(
+							"**Our quick response team will contact you within 3 hours."
+						);
+					}
 				} else if (response.status == 502) {
-					props.toggleDisplayErrorMessage();
-					props.toggleDisplayForm();
+					if (props.modal) {
+						props.toggleDisplayErrorMessage();
+						props.toggleDisplayForm();
+					} else {
+						alert(
+							"**There was an error while sending your response please try again!"
+						);
+					}
 				}
 				console.log(response);
 			},
 			(err) => {
-				props.toggleDisplayErrorMessage();
-				props.toggleDisplayForm();
+				if (props.modal) {
+					props.toggleDisplayErrorMessage();
+					props.toggleDisplayForm();
+				} else {
+					alert(
+						"**There was an error while sending your response please try again!"
+					);
+				}
 			}
 		);
 	};

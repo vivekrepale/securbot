@@ -12,13 +12,13 @@
 		justify-items: center;
 
 		&__input {
-			min-width: 130%;
+			width: 25rem;
 			height: 3.5rem;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 			border-radius: 8px;
 			text-indent: 1.5rem;
-			border-width: none;
-			-webkit-box-shadow: 0px 10px 6px -6px rgba(black, 0.5);
+			border-width: 0;
+			box-shadow: -5px 10px 6px -6px rgba(black, 0.5);
 
 			&--requirement {
 				height: 7rem;
@@ -26,18 +26,25 @@
 		}
 
 		&__submit-button {
-			width: 20rem;
-			height: 3.5rem;
-			background-color: $color-white;
-			font-size: 1.5rem;
+			//width: 20rem;
+			//height: 3.5rem;
+			background-color: white;
+			font-size: 2rem;
 			border-width: 0;
 			cursor: pointer;
+			box-shadow: 0px 10px 6px -6px rgba(black, 0.5);
+			padding: 1rem 2rem;
 
 			&:hover,
 			&:active {
-				background-color: $color-black;
+				background-color: $color-red;
 				color: $color-white;
 			}
 		}
 	}
+}
+
+.f_svg-c {
+	height: 3rem;
+	width: 3rem;
 }

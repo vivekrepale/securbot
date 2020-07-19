@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import IndianFlag from "../assets/images/f_flag.jpeg";
 import IndiaMart from "../assets/images/f_indiaMart.png";
 import DigitalIndia from "../assets/images/f_digitalIndia.png";
-import AtmanirbharBharat from "../assets/images/f_atmanirbhar.png";
+import AtmanirbharBharat from "../assets/images/f_atmanirbhar.jpeg";
 
 import SvgLocation from "../components/svg/location2.js";
 
