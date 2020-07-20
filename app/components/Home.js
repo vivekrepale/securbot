@@ -3,6 +3,8 @@ import { withRouter } from "react-router-dom";
 
 import ContactUsModal from "./modals/ContactUsModal";
 
+import SvgOpen from "../components/svg/Open.js";
+
 const Home = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -73,6 +75,43 @@ const Home = () => {
 						No wonders then, that we are leading manufacturer in
 						India.
 					</p>
+				</div>
+			</div>
+
+			<div className="home__services">
+				<h1 className="home__services__title">
+					We are providing our expertise in following fields:
+				</h1>
+				<div className="home__services__service">
+					<h2 className="home__services__service--1">
+						<SvgOpen className="home__services__service--icon" />
+						Closed circuit television system. (CCTVs)
+					</h2>
+
+					<h2 className="home__services__service--2">
+						<SvgOpen className="home__services__service--icon" />
+						Video door phone.
+					</h2>
+
+					<h2 className="home__services__service--3">
+						<SvgOpen className="home__services__service--icon" />
+						GSM Alarm Security Panels.
+					</h2>
+
+					<h2 className="home__services__service--4">
+						<SvgOpen className="home__services__service--icon" />
+						Home automations.
+					</h2>
+
+					<h2 className="home__services__service--5">
+						<SvgOpen className="home__services__service--icon" />
+						Network boosters.
+					</h2>
+
+					<h2 className="home__services__service--6">
+						<SvgOpen className="home__services__service--icon" />
+						Annual maintenance contract.
+					</h2>
 				</div>
 			</div>
 		</div>

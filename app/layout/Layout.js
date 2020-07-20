@@ -14,10 +14,14 @@ import ContactUs from "../components/ContactUs.js";
 import Products from "../components/Products.js";
 import Testimonials from "../components/Testimonials.js";
 import S_and_S from "../components/S_and_S.js";
+import SocialHook from "../components/SocialHook.js";
 
 const Layout = () => {
 	return (
 		<Router>
+			<div className="social-hook-container">
+				<SocialHook />
+			</div>
 			<div className="layout__navbar">
 				<NavBar />
 			</div>
