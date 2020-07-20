@@ -43,6 +43,11 @@
 
 			@media only screen and (max-width: 55em) {
 				margin: 0;
+				grid-row: 1/2;
+			}
+
+			@media only screen and (max-width: 23.75em) {
+				letter-spacing: 0px;
 			}
 
 			&__address {

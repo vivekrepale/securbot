@@ -1,7 +1,6 @@
 .header {
 	display: grid;
 	grid-template-rows: 1fr minmax(max-content, 2fr) 1fr;
-	//grid-template-columns: max-content minmax(max-content, 1fr);
 
 	height: 100%;
 	background-image: linear-gradient(
@@ -35,7 +34,6 @@
 
 	&__title {
 		grid-row: 2/3;
-
 		display: grid;
 		grid-template-columns: max-content;
 		align-content: center;
@@ -51,23 +49,23 @@
 			color: $color-white;
 			font-family: $sidEnpFont;
 			display: inline-block;
-			-webkit-box-shadow: 0px 10px 6px -6px rgba(white, 0.1);
-
 			font-size: 6rem;
+
 			@media only screen and (max-width: 46.25em) {
 				font-size: 4rem;
 			}
 
 			@media only screen and (max-width: 28.75em) {
-				font-size: 3.2rem;
+				font-size: 3.4rem;
 			}
 
 			@media only screen and (max-width: 20.625em) {
-				font-size: 2.5rem;
+				font-size: 2.8rem;
 			}
 
 			&:first-letter {
-				color: $color-red;
+				color: red;
+				text-shadow: 0px 5px 10px rgba(white, 0.5);
 			}
 		}
 
@@ -82,7 +80,7 @@
 			}
 
 			@media only screen and (max-width: 28.75em) {
-				font-size: 0.8rem;
+				font-size: 0.6rem;
 			}
 
 			// @media only screen and (max-width: 20.625em) {

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 const Products = () => {
-	return <div>Products</div>;
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
+	return <div></div>;
 };
 
 export default withRouter(Products);

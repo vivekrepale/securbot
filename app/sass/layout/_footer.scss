@@ -33,11 +33,12 @@
 		margin: 0 10rem;
 
 		@media only screen and (max-width: 45.625em) {
-			margin: 0 4rem;
+			margin: 0;
+			padding: 1rem 2rem;
 		}
 
-		@media only screen and (max-width: 29em) {
-			margin: 0;
+		@media only screen and (max-width: 23.75em) {
+			padding: 1rem 1rem;
 		}
 
 		img {
@@ -67,12 +68,11 @@
 			padding: 0rem 4rem;
 			border-radius: 3px;
 
-			@media only screen and (max-width: 36.25em) {
-				padding: 1rem 2rem;
+			@media only screen and (max-width: 30em) {
+				padding: 1rem 1rem;
 			}
-
-			@media only screen and (max-width: 23.75em) {
-				padding: 1rem 0rem;
+			@media only screen and (max-width: 25em) {
+				padding: 1rem 0.5rem;
 			}
 		}
 	}

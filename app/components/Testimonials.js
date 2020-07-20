@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 const Testimonials = () => {
-	return <div>Testimonials</div>;
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
+	return <div></div>;
 };
 
 export default withRouter(Testimonials);

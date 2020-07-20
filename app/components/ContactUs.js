@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import ContactUsForm from "./ContactUsForm.js";
 
 import SvgLocation from "../components/svg/location2.js";
 
 const ContactUs = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="contact-us">
 			<div className="contact-us__contact">

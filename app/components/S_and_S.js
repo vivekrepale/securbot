@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 import ssCommercial from "../assets/images/ssCommercial_small.png";
@@ -23,6 +23,10 @@ import SvgDiamond from "../components/svg/diamond.js";
 import SvgAccess from "../components/svg/access.js";
 
 const S_and_S = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="sscontainer">
 			<div className="sscontainer__s sscontainer__s--1">

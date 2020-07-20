@@ -1,0 +1,60 @@
+.about-us {
+	margin: 1rem 15rem;
+
+	display: grid;
+	justify-items: center;
+
+	@media only screen and (max-width: 55em) {
+		margin: 1rem 8rem;
+	}
+
+	@media only screen and (max-width: 31.75em) {
+		margin: 1rem 4rem;
+	}
+
+	@media only screen and (max-width: 25em) {
+		margin: 1rem 1.5rem;
+	}
+
+	&__heading {
+		padding: 2rem 0;
+		display: grid;
+		grid-template-columns: max-content;
+
+		&__text-1,
+		&__text-2 {
+			font-family: $securbotFont;
+			font-size: 5rem;
+			display: inline-block;
+
+			&:first-letter {
+				color: $color-red;
+			}
+		}
+		h4 {
+			justify-self: end;
+		}
+	}
+
+	&__text {
+		border: 1px solid;
+		border-image: linear-gradient(red, blue) 10%;
+		padding: 2rem 5rem;
+		font-size: 1.5rem;
+		word-spacing: 4px;
+		word-wrap: break-word;
+
+		&:first-letter {
+			font-size: 3rem;
+		}
+
+		span {
+			font-weight: bold;
+			color: red;
+		}
+
+		@media only screen and (max-width: 31.75em) {
+			padding: 2rem 3rem;
+		}
+	}
+}

@@ -1,19 +1,16 @@
 .home {
-	&__button {
-		//background-color: $color-primary;
-		//margin: 0rem min(10, 30rem);
-		//padding: 10rem;
+	margin: 0 0 2rem 0;
+	font-size: 1.2rem;
 
+	&__button {
 		display: grid;
 		grid-template-columns: max-content; //minmax(min-content, 1fr);
 		grid-template-rows: 20vh;
 		justify-content: center;
 		align-items: center;
 
-		//transform: translateY(-50%);
-
 		&__btn {
-			padding: 1rem 4rem;
+			padding: 1.5rem 3rem;
 			background-color: $color-white;
 			color: $color-black;
 			//box-shadow: 2rem 2rem 4rem rgba(white, 0.2);
@@ -25,6 +22,58 @@
 			&:active {
 				background-color: $color-red;
 				color: $color-white;
+			}
+		}
+	}
+
+	&__info {
+		display: grid;
+		justify-items: center;
+		justify-content: center;
+		grid-gap: 2rem;
+		margin: 0 10rem;
+		padding: 2rem 5rem;
+		border: 1px solid;
+		border-image: linear-gradient(red, blue) 10%;
+
+		@media only screen and (max-width: 28em) {
+			margin: 0 5rem;
+		}
+
+		@media only screen and (max-width: 23em) {
+			margin: 0 1rem;
+		}
+
+		&__title {
+			display: grid;
+			grid-template-columns: max-content;
+			&__text-1,
+			&__text-2 {
+				font-family: $securbotFont;
+				font-size: 5rem;
+				display: inline-block;
+
+				&:first-letter {
+					color: $color-red;
+				}
+			}
+			h4 {
+				justify-self: end;
+			}
+		}
+
+		&__sub-title {
+			color: red;
+		}
+
+		&__text-1,
+		&__text-2 {
+			font-size: 1.5rem;
+			word-spacing: 4px;
+			word-wrap: break-word;
+
+			span {
+				color: red;
 			}
 		}
 	}
