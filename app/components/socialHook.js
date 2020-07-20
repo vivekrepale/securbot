@@ -27,7 +27,7 @@ const SocialHook = () => {
 				<a href="tel:+918080605001">
 					<SvgCall fill="white" className="hook__content__icon" />
 				</a>
-				<a href="https://api.whatsapp.com/send?phone=8080605001">
+				<a href="https://api.whatsapp.com/send?phone=+918080605001">
 					<SvgWhatsApp className="hook__content__icon" />
 				</a>
 				<a href="mailto:enquiry@securbot.in">
