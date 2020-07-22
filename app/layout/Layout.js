@@ -25,9 +25,7 @@ const Layout = () => {
 			<div className="layout__navbar">
 				<NavBar />
 			</div>
-			<div className="header-logo">
-				<HeaderLogo />
-			</div>
+
 			<div className="layout">
 				<div className="layout__header-main">
 					<Header />

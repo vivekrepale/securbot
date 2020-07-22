@@ -35,7 +35,6 @@ const Footer = () => {
 				<div className="footer__offices__office footer__offices__office--1">
 					<div className="footer__offices__office__info ">
 						<h4 className="footer__offices__office__info__location ">
-							<SvgLocation fill="red" className="f_svg" />
 							Mumbai (Head-office)
 						</h4>
 						<p className="footer__offices__office__info__address ">
@@ -58,7 +57,6 @@ const Footer = () => {
 						<div className="footer__phone-call-link"></div>
 
 						<h4 className="footer__offices__office__info__location ">
-							<SvgLocation fill="red" className="f_svg" />
 							Punjab
 						</h4>
 						<p className="footer__offices__office__info__address ">

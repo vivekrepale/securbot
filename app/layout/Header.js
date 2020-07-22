@@ -3,6 +3,7 @@ import { useSpring, animated, config } from "react-spring";
 import LogoIamge from "../assets/images/logo.png";
 
 import NavbarDesktop from "./NavbarDesktop.js";
+import HeaderLogo from "./HeaderLogo";
 
 import SvgCall from "../components/svg/call.js";
 import SvgEmail from "../components/svg/email.js";
@@ -42,6 +43,9 @@ const Header = () => {
 	});
 	return (
 		<header className="header">
+			<div className="header-logo">
+				<HeaderLogo />
+			</div>
 			<NavbarDesktop />
 
 			<div className="header__title">
