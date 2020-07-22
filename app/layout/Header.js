@@ -16,17 +16,17 @@ const Header = () => {
 		to: { opacity: 1, marginTop: 0 },
 	});
 
-	// const rotate = useSpring({
-	// 	from: { transform: " rotate(-45deg)" },
-	// 	to: async (next) => {
-	// 		while (1) {
-	// 			await next({ transform: " rotate(45deg)" });
-	// 		}
-	// 	},
-	// 	reset: true,
-
-	// 	config: { duration: 2000 },
-	// });
+	const cctv = useSpring({
+		from: { transform: "scale(0.5) translateY(-20px) " },
+		to: async (next) => {
+			while (1) {
+				await next({ transform: "scale(0.8) translateY(30px) " });
+			}
+		},
+		reset: true,
+		//reverse: true,
+		config: { duration: 3000 },
+	});
 
 	const call_me = useSpring({
 		from: { transform: "scale(0) translateX(-25px)", opacity: 0 },
@@ -37,9 +37,9 @@ const Header = () => {
 					opacity: 1,
 				});
 			}
-			reset: true;
 		},
 		reset: true,
+		config: { duration: 1000 },
 	});
 	return (
 		<header className="header">
@@ -60,16 +60,20 @@ const Header = () => {
 			</div>
 
 			<animated.div style={fade} className="header__decoration">
-				<SvgCctv2
-					fill="white"
-					stroke="none"
-					className="header__decoration__svg"
-				/>
+				<animated.div style={cctv}>
+					{" "}
+					<SvgCctv2
+						fill="white"
+						stroke="none"
+						className="header__decoration__svg"
+					/>
+				</animated.div>
 
 				<h3>
 					Be it your <span>house</span>, your <span>shop</span> or
-					your <span>workspace</span>, we can handle all your security
-					related issues!
+					your <span>workspace</span>, we can handle all your{" "}
+					<span>security </span>
+					and <span>survailance</span> related issues!
 				</h3>
 			</animated.div>
 
