@@ -1,0 +1,35 @@
+.navbar {
+	position: absolute;
+
+	@media only screen and (max-width: 55em) {
+		display: none;
+	}
+
+	display: grid;
+	grid-template-columns: repeat(6, minmax(max-content, 1fr));
+	justify-content: center;
+	background-image: linear-gradient(to bottom, rgba(black, 1), rgba(red, 0));
+	margin: 0 12rem;
+
+	&__link {
+		&,
+		&:link,
+		&:visited {
+			color: rgba($color-white, 1);
+			text-decoration: none;
+			padding: 1.5rem;
+			background-color: transparent;
+			font-size: 2rem;
+		}
+
+		&:hover,
+		&:active {
+			color: $color-white;
+			background-image: linear-gradient(
+				to bottom,
+				rgba(black, 0),
+				rgba(black, 1)
+			);
+		}
+	}
+}

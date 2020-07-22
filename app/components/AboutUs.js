@@ -3,7 +3,10 @@ import { withRouter } from "react-router-dom";
 
 const AboutUs = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 400,
+			behavior: "smooth",
+		});
 	}, []);
 
 	return (

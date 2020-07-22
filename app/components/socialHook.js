@@ -8,7 +8,7 @@ import SvgOpen from "../components/svg/Open.js";
 import SvgClose from "../components/svg/Close.js";
 
 const SocialHook = () => {
-	const [content, setContent] = useState(false);
+	const [content, setContent] = useState(true);
 
 	const toggleDisplayContent = () => {
 		if (content) {

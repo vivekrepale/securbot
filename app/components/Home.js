@@ -7,7 +7,10 @@ import SvgOpen from "../components/svg/Open.js";
 
 const Home = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
 	}, []);
 
 	const [displayContactUsModal, setDisplayContactUsModal] = useState(false);

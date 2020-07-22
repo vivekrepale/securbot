@@ -6,7 +6,10 @@ import SvgLocation from "../components/svg/location2.js";
 
 const ContactUs = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 400,
+			behavior: "smooth",
+		});
 	}, []);
 
 	return (

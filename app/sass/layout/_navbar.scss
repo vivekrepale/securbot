@@ -1,4 +1,11 @@
 .navigation {
+	display: none;
+	position: relative;
+
+	@media only screen and (max-width: 55em) {
+		display: inline;
+	}
+
 	&__background {
 		position: fixed;
 		top: 6rem;

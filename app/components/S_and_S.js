@@ -24,7 +24,10 @@ import SvgAccess from "../components/svg/access.js";
 
 const S_and_S = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 400,
+			behavior: "smooth",
+		});
 	}, []);
 
 	return (

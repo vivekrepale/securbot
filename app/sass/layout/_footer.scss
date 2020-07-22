@@ -38,7 +38,7 @@
 		}
 
 		@media only screen and (max-width: 23.75em) {
-			padding: 1rem 1rem;
+			padding: 1rem 0rem;
 		}
 
 		img {
@@ -67,6 +67,8 @@
 		&__atmanirbhar {
 			padding: 0rem 4rem;
 			border-radius: 3px;
+			border: 1px solid white;
+			text-align: center;
 
 			@media only screen and (max-width: 30em) {
 				padding: 1rem 1rem;
@@ -119,6 +121,7 @@
 						width: 5rem;
 						height: 5rem;
 						transform: translateY(-2.5rem);
+						z-index: 0;
 
 						@media only screen and (max-width: 28.75em) {
 							width: 4.5rem;
