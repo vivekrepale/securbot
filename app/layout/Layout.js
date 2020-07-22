@@ -15,6 +15,7 @@ import Products from "../components/Products.js";
 import Testimonials from "../components/Testimonials.js";
 import S_and_S from "../components/S_and_S.js";
 import SocialHook from "../components/socialHook.js";
+import Admin from "../components/Admin.js";
 
 const Layout = () => {
 	return (
@@ -55,6 +56,9 @@ const Layout = () => {
 
 						<Route path="/contact-us">
 							<ContactUs />
+						</Route>
+						<Route path="/admin">
+							<Admin />
 						</Route>
 					</Switch>
 				</div>
