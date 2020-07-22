@@ -36,7 +36,7 @@ const S_and_S = () => {
 				<SvgCctv1
 					fill="black"
 					stroke="white"
-					className="svg svg--right"
+					className="sscontainer__s__svg sscontainer__s__svg--right"
 				/>
 				<div className="sscontainer__s__text">
 					<h3>Our commercial CCTV solutions!</h3>
@@ -51,7 +51,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--2">
-				<SvgCctv2 fill="black" stroke="white" className="svg " />
+				<SvgCctv2
+					fill="black"
+					stroke="white"
+					className="sscontainer__s__svg "
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Our residential CCTV solutions!</h3>
 					<p>
@@ -65,7 +69,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--3">
-				<SvgCctvWifi fill="black" stroke="white" className="svg " />
+				<SvgCctvWifi
+					fill="black"
+					stroke="white"
+					className="sscontainer__s__svg "
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Wifi GSM Security Alarm!</h3>
 					<p>
@@ -117,7 +125,7 @@ const S_and_S = () => {
 				<SvgCctvPhone
 					fill="black"
 					stroke="white"
-					className="svg svg--center"
+					className="sscontainer__s__svg sscontainer__s__svg--end"
 				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Public Address System!</h3>
@@ -136,7 +144,7 @@ const S_and_S = () => {
 				<SvgAccess
 					fill="black"
 					stroke="white"
-					className="svg svg--right"
+					className="sscontainer__s__svg "
 				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Access Control System!</h3>
@@ -151,7 +159,11 @@ const S_and_S = () => {
 			</div>
 
 			<div className="sscontainer__s sscontainer__s--6">
-				<SvgDiamond fill="black" stroke="white" className="svg" />
+				<SvgDiamond
+					fill="black"
+					stroke="white"
+					className="sscontainer__s__svg sscontainer__s__svg--center"
+				/>
 				<div className="sscontainer__s__text">
 					<h3>Annual Maintenance Contract!</h3>
 					<p>
@@ -172,7 +184,7 @@ const S_and_S = () => {
 				<SvgAlarm
 					fill="black"
 					stroke="white"
-					className="svg svg--center"
+					className="sscontainer__s__svg sscontainer__s__svg--end"
 				/>
 				<div className="sscontainer__s__text">
 					<h3>Our Fire Alarm system!</h3>

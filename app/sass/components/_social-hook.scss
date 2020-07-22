@@ -3,7 +3,6 @@
 	grid-auto-flow: column;
 	grid-template-columns: repeat(2, min-content);
 	align-items: start;
-	z-index: 2000;
 
 	&__btn {
 		width: 3rem;
