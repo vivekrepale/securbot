@@ -6,7 +6,7 @@ This project is landing page for local CCTV bussiness "SecurBot" by Siddjarth En
 
 ## Live link
 
-[securbot.in](securbot.in)
+[https://securbot.in](https://securbot.in)
 
 ## Feautures
 
